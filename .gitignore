@@ -10,37 +10,7 @@
 .idea/vcs.xml
 .idea/workspace.xml
 
-#grunt打包
-.tmp
-release
-
 #node模块
 node_modules
 Generated_files.xml
 .module-cache
-
-#shell运行产物
-nohup.out
-
-#bower模块
-bower_components
-
-#项目部分
-#css 这个暂时不能排除 要先修改grunt后才能排除
-rjs/bundle.js
-js/bundle.min.js
-
-#独立组件引用less时不需要的css排除
-css/billorderinfo.css
-
-assets
-npm-debug.log
-
-#sigua only
-tem
-
-#模拟的json数据
-*.json
-
-#vim缓存文件
-*.swp
