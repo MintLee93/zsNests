@@ -5,7 +5,7 @@ var path = require('path');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index');
+  res.render('detail', { title: 'Express2222234' });
 });
 
 module.exports = router;
