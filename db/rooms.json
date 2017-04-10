@@ -2,7 +2,125 @@
 	"rooms": [
 		{
 			"id": "0001",
-			"name": "森林"
+			"name": "森系双床房",
+			"bedType": "双床",
+			"avatar": "",
+			"price": "580",
+			"additional": false,
+			"area": 35,
+			"floor": false,
+			"maxNum": 2
+		},
+		{
+			"id": "0002",
+			"name": "雀舍大床房",
+			"bedType": "大床",
+			"avatar": "",
+			"price": "680",
+			"additional": false,
+			"area": 35,
+			"floor": false,
+			"maxNum": 2
+		},
+		{
+			"id": "0003",
+			"name": "幸舍",
+			"bedType": "双床",
+			"avatar": "",
+			"price": "830",
+			"additional": false,
+			"area": 35,
+			"floor": false,
+			"maxNum": 2
+		},
+		{
+			"id": "0004",
+			"name": "森系亲子房",
+			"bedType": "多床",
+			"avatar": "",
+			"price": "680",
+			"additional": false,
+			"area": 35,
+			"floor": false,
+			"maxNum": 3
+		},
+		{
+			"id": "0005",
+			"name": "啡友房",
+			"bedType": "双床",
+			"avatar": "",
+			"price": "780",
+			"additional": false,
+			"area": 35,
+			"floor": false,
+			"maxNum": 2
+		},
+		{
+			"id": "0006",
+			"name": "代舍",
+			"bedType": "大床",
+			"avatar": "",
+			"price": "1080",
+			"additional": false,
+			"area": 35,
+			"floor": false,
+			"maxNum": 2
+		},
+		{
+			"id": "0007",
+			"name": "雀舍套房",
+			"bedType": "大床",
+			"avatar": "",
+			"price": "1280",
+			"additional": false,
+			"area": 35,
+			"floor": false,
+			"maxNum": 2
+		},
+		{
+			"id": "0008",
+			"name": "欢乐颂二居室",
+			"bedType": "双人床1.8米，2张",
+			"avatar": "",
+			"price": "718",
+			"additional": false,
+			"area": 35,
+			"floor": false,
+			"maxNum": 4
+		},
+		{
+			"id": "0009",
+			"name": "欢乐颂三居室",
+			"bedType": "双人床1.8米，2张和单人床1.2米",
+			"avatar": "",
+			"price": "1692",
+			"additional": false,
+			"area": 35,
+			"floor": false,
+			"maxNum": 6
+		}
+	],
+	"intro": [
+		{
+			"name": "便利设施",
+			"desc": "雨伞、多种规格电源插座、110V电压插座、中央空调、书桌、沙发、220V电压插座、电子秤、针线包、遮光窗帘、床具:鸭绒被、备用床具、房间内高速上网、客房WIFI覆盖免费"
+		},
+		{
+			"name": "媒体&科技",
+			"desc": "有线频道、液晶电视机"
+		},
+		{
+			"name": "食品&饮品",
+			"desc": "电热水壶、咖啡壶/茶壶、免费瓶装水、迷你吧"
+		},
+		{
+			"name": "浴室",
+			"desc": "24小时热水、拖鞋、浴室化妆放大镜、浴衣、独立淋浴间、吹风机、免费洗漱用品(6样以上)"
+		},
+		{
+			"name": "服务&其他",
+			"desc": "免费报纸"
 		}
 	]
+
 }
