@@ -2,11 +2,159 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>首页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>雀舍</title>
 </head>
 <body>
-    <div>
-        hello world  hahahah
+    <header class="row">
+        <div class="navContainer row">
+            <div class="col-sm-2 navButton fontColor">首页</div>
+            <div class="col-sm-2 navButton">雀舍其家</div>
+            <div class="col-sm-4 logo">
+                <img src="/img/index/logo.png" alt="logo">
+            </div>
+            <div class="col-sm-2 navButton">舍型展示</div>
+            <div class="col-sm-2 navButton">舍友服务</div>
+            <!--<div class="dropdown">-->
+                <span id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="visible-xs-block navMenu glyphicon glyphicon-menu-hamburger " aria-hidden="true"></span>
+                <ul id="phoneNav" class="phoneNav">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">雀舍其家</a></li>
+                    <li><a href="#">舍型展示</a></li>
+                    <li><a href="#">舍友服务</a></li>
+                </ul>
+            <!--</div>-->
+        </div>
+    </header>
+    <nav class="row">
+        <div class="navImg"></div>
+        <div class="dataPicker">
+            客房预定
+        </div>
+    </nav>
+    <div class="content">
+        <div class="nestOutside">
+            <div class="nestOutsideTop">
+                <h1>雀舍咖啡城市民居</h1>
+                <p>是舟山雀舍旅业有限公司倾力打造的集『住宿、休闲、餐饮』为一体的个性化体验场所</p>
+                <p>有设计新颖、风格独特的客房51间（套）</p>
+                <p>可提供自助早餐、精品咖啡、各种酒饮及轻食</p>
+                <p>地处普陀行政商务、旅游文化、生活休闲中心。</p>
+            </div>
+            <div class="nestOutsideImg">
+                <img class="nestOutsideImg" src="../img/index/out_side.jpg" alt="nestOutsideImg">
+                <div class="nestOutsideBottom"></div>
+            </div>
+        </div>
+        <div class="row nestSea">
+            <div class="visible-xs-block nestSeaLine"></div>
+            <div class="col-md-6 nestSeaLeft">
+                <h1 class="nestSeaH1">在海岛和谐探玩，</h1>
+                <h2>和鲜氧恣意共舞，与『雀舍』自由飞翔。</h2>
+                <p class="nestSeaP">①为结伴出游的家庭、情侣或同学，提供组合套房，一房多室，可小聚畅谈、可小试厨艺，给你『家』一样的体验。</p>
+                <p class="nestSeaP">②越来越多的年轻夫妻选择了带着宝宝一起出游，我们还贴心地准备了亲子床，布置温馨舒适。</p>
+                <p class="nestSeaP">③假如有背包客、行脚僧有缘来此，这里有咖啡、有轻食，你留下故事的种子，我们来镌刻下你自由行走的花。</p>
+            </div>
+            <div class="col-md-6 nestSeaRight">
+                <img class="nestSeaRightImg" src="img/index/big_bed.jpg" alt="">
+            </div>
+        </div>
+        <!--屏幕大于768展示该div-->
+        <div class="visible-xs-block">
+            <div class="row nestSea">
+                <div class="nestSeaLine"></div>
+                <div class="col-md-6 nestSeaLeft">
+                    <h1 class="nestSeaH1">有别于传统精品酒店、民宿客栈、连锁宾馆等，</h1>
+                    <h2>『雀舍咖啡城市民居』</h2>
+                    <p class="nestSeaP">更注重游客们对个性化的追求和感受。</p>
+                    <p class="nestSeaP">设计上——赋予每一寸空间最合理的规划和视觉享受；</p>
+                    <p class="nestSeaP">理念上——依旧保留了醇正的咖啡元素和雀舍独特味道；</p>
+                    <p class="nestSeaP">服务上——成熟的酒店管理团队让自由与规范和谐统一；</p>
+                </div>
+                <div class="col-md-6 nestSeaRight">
+                    <img class="nestSeaRightImg" src="img/index/big_bed.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <!--屏幕小于768隐藏该div-->
+        <div class="hidden-xs nestDesk">
+            <div class="nestDeskFont">
+                <h2>有别于传统精品酒店、民宿客栈、连锁宾馆等，</h2>
+                <h1>『雀舍咖啡城市民居』</h1>
+                <h1>更注重游客们对个性化的追求和感受。</h1>
+                <p>设计上——赋予每一寸空间最合理的规划和视觉享受；</p>
+                <p>理念上——依旧保留了醇正的咖啡元素和雀舍独特味道；</p>
+                <p>服务上——成熟的酒店管理团队让自由与规范和谐统一；</p>
+            </div>
+        </div>
+        <!--屏幕大于768展示该div-->
+        <div class="visible-xs-block">
+            <div class="row nestSea">
+                <div class="nestSeaLine"></div>
+                <div class="col-md-6 nestSeaLeft">
+                    <h1 class="nestSeaH1">『雀舍咖啡城市民居』</h1>
+                    <h2>『雀舍咖啡城市民居』</h2>
+                    <p class="nestSeaP">更注重游客们对个性化的追求和感受。</p>
+                    <p class="nestSeaP">设计上——赋予每一寸空间最合理的规划和视觉享受；</p>
+                    <p class="nestSeaP">理念上——依旧保留了醇正的咖啡元素和雀舍独特味道；</p>
+                    <p class="nestSeaP">服务上——成熟的酒店管理团队让自由与规范和谐统一；</p>
+                </div>
+                <div class="col-md-6 nestSeaRight">
+                    <img class="nestSeaRightImg" src="img/index/nest_home.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <!--屏幕小于768隐藏该div-->
+        <div class="hidden-xs">
+            <div class="row nestTourism">
+                <div class="col-md-6 nestTourismRight">
+                    <img src="img/index/big_bed.jpg" alt="">
+                </div>
+                <div class="col-md-6 nestTourismLeft">
+                    <h1 class="nestTourismLeftH1">『雀舍咖啡城市民居』</h1>
+                    <h2>地处旅游文化、生活购物、行政商务中心。</h2>
+                    <p class="nestTourismLeftP">①旅游胜地，与中国四大佛山——普陀山隔海相望，出发朱家尖南沙、桃花岛、东极岛、枸杞岛的必经之地。</p>
+                    <p class="nestTourismLeftP">②地处美乐汇商业街，吃喝玩乐一应俱全，周围有区政府、保利大剧院、欧尚超市、凯虹广场、商务写字楼群等。</p>
+                    <p class="nestTourismLeftP">③交通便利，距离普陀山机场、朱家尖蜈蚣峙码头、沈家门半升洞码头、普陀客运中心均在十分钟车程内。</p>
+                </div>
+            </div>
+        </div>
+
     </div>
+    <footer>
+        <div class="nestFooterContainer">
+            <img src="img/index/foot_logo.png" alt="">
+            <div class="nestFooterLeft">
+                <p>@Copyright</p>
+            </div>
+            <div class="nestFooterRight">
+                <p>地址：浙江省舟山市普陀区东港昌正街170号</p>
+                <p>电话：0580-3887474</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+        window.onresize=function () {
+            document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+        }
+    </script>
+    <script src="public/jquery-3.1.1.js"></script>
+    <script src="public/bootstrap.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.navMenu').click(function () {
+                if($(this).hasClass('glyphicon-menu-hamburger')){
+                    $(this).removeClass('glyphicon-menu-hamburger').addClass('glyphicon-remove');
+                }else {
+                    $(this).removeClass('glyphicon-remove').addClass('glyphicon-menu-hamburger');
+                }
+                $("#phoneNav").slideToggle(300);
+            })
+
+        })
+    </script>
 </body>
 </html>

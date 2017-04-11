@@ -1,0 +1,357 @@
+html,body{
+    font-family: "Microsoft YaHei","Hiragino Sans GB";
+}
+/*
+ 设定首页小于768px的手机屏幕
+ */
+@media screen and (max-width: 768px) {
+    header .navContainer{
+        width: 100%;
+    }
+    .navButton{
+        display: none;
+    }
+    .logo{
+        left: 10px;
+        /* float: left; */
+        position: absolute;
+    }
+    .content .nestSea h1,h2,p{
+        margin-left: 30px;
+    }
+    .content .nestSea .nestSeaP{
+        margin-top: auto;
+        margin-left: 30px;
+    }
+    .content .nestSea .nestSeaRight img{
+        margin-left: 5%;
+    }
+    .content .nestTourism .nestTourismRight img{
+        /*height: 561px; */
+        width: 90%;
+        /* margin-top: 73px; */
+        margin-left: 5%;
+    }
+    .content .nestTourism .nestTourismLeft h1,h2,p{
+        margin-top: auto;
+    }
+    .content .nestTourism .nestTourismLeft .nestTourismLeftP{
+        margin-top: auto;
+    }
+}
+
+/*
+ 设定首页大于768px的屏幕
+ */
+@media screen and (min-width: 768px) {
+    .content .nestOutsideTop h1{
+        margin-bottom: 85px;
+        font-size: 55px;
+    }
+    .content .nestOutsideImg img{
+        width: 5rem;
+        padding: .22rem;
+    }
+    .content .nestSea .nestSeaLeft{
+        padding-left: .2rem;
+    }
+    .nestSeaRight{
+        margin-bottom: 60px;
+    }
+
+}
+header{
+    height: 60px;
+    /*width: 100%;*/
+    /*border: 1px solid;*/
+    font-size: 15px;
+}
+
+.navMenu{
+    margin-top: 15px;
+    font-size: 30px;
+    position: absolute;
+    right: 40px;
+}
+
+.dropdown-menu{
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    border: 0;
+    background-color: rgba(225, 225, 225, .75);
+}
+
+.navContainer{
+    margin-left: auto;
+    margin-right: auto;
+    height: 60px;
+    width: 60%;
+    /*border: 1px solid yellow;*/
+    font-size: 15px;
+}
+
+.fontColor{
+    color: #5ac6cc;
+}
+
+.navButton,.logo {
+    cursor: pointer;
+}
+
+header div{
+    line-height: 60px;
+    text-align: center;
+     height: 60px;
+}
+
+header div img{
+    height: 32px;
+}
+
+nav{
+    text-align: center;
+     background-image: url("../img/index/nav_bg.jpg");
+     height: 800px;
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+
+nav .navImg{
+    margin-top: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url("../img/index/nest.png");
+    height: 390px;
+    width: 442px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header .phoneNav{
+    display: none;
+    position: relative;
+    background-color: rgba(225, 225, 225, .75);
+    padding: 0;
+    top: 60px;
+    list-style: none;
+}
+
+header .phoneNav li {
+    display: block;
+    border-top: 1px solid #888888;
+}
+header .phoneNav li:last-child{
+    display: block;
+    border-bottom: 1px solid #888888;
+}
+
+header .phoneNav a{
+    width: 100%;
+    height:100%;
+    color: #000000;
+    text-decoration: none;
+}
+
+nav .dataPicker{
+    margin-top: 122px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 72px;
+    width: 394px;
+    background-color: rgba(225,225,225,0.75);
+    /* opacity: 0.75; */
+    /*box-shadow: 0 5px 70px #888888;*/
+    line-height: 68px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #2d1405;
+    border-radius: 50px;
+    /* border: 1px solid #ffffff; */
+}
+
+.content{
+    /*height: 1000px;*/
+}
+
+.content .nestOutside{
+    /*position: relative;*/
+    /*margin-top: 91px;*/
+    /*height: 1000px;*/
+}
+.content .nestOutsideTop{
+    text-align: center;
+    /*height: 605px;*/
+}
+.nestOutsideTop h1{
+    color: #000000;
+    /*margin-bottom: .85rem;*/
+    font-family: "SimHei";
+    margin-top: .6rem;
+    font-size: 36px;
+    font-weight: bold;
+}
+.content .nestOutsideTop p{
+    font-family: "SimHei";
+    color: rgb(185, 184, 184);
+}
+.content .nestOutsideBottom{
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: #f1f1f1;
+    height: 2.4rem;
+    width: 100%;
+}
+.content .nestOutsideImg{
+    margin-bottom: .3rem;
+    /*position: relative;*/
+    z-index: 2;
+    /*margin-left: calc(50% - 500px);*/
+    /*position: absolute;*/
+    /*bottom: 48px;*/
+    text-align: center;
+    /*float: left;*/
+    background-color: #ffffff;
+}
+.nestOutsideImg{
+    position: relative;
+    padding: .36rem;
+    width: 100%;
+}
+
+.content .nestSea{
+    border: 1px solid;
+    margin-top: 26px;
+    /*height: 800px;*/
+}
+.nestSeaLeft{
+    /*padding-right: 36px;*/
+    padding-left: 10px;
+    text-align: left;
+    display: inline-block;
+    /*width: 50%;*/
+    /*height: 800px;*/
+}
+
+.nestSeaP{
+    margin-top: 80px;
+    font-size: 20px;
+    color: #666666;
+}
+.content .nestSea .nestSeaRight{
+    /*display: inline-block;*/
+}
+.content .nestSea .nestSeaLine{
+    border: 1px solid #666666;
+    width: 120px;
+    margin-left: 42px;
+    margin-bottom: 16px;
+}
+
+.nestSeaRightImg{
+    margin-bottom: 60px;
+    width: 90%;
+}
+
+.content .nestDesk{
+    background-image: url("../img/index/nest_desk.jpg");
+    background-size: cover;
+    background-position:center ;
+    background-repeat: no-repeat;
+    height: 800px;
+ }
+
+.content .nestDesk .nestDeskFont{
+    text-align: center;
+    top: 100px;
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #ffffff;
+    height: 650px;
+    position: relative;
+ }
+
+.content .nestDesk .nestDeskFont h2{
+    padding-bottom: 66px;
+    padding-top: 108px;
+}
+
+
+.content .nestDesk .nestDeskFont h1{
+    margin-top: 30px;
+ }
+
+.content .nestDesk .nestDeskFont p{
+    margin-top: 44px;
+    color: #666666;
+    font-size: 20px;
+ }
+
+.content .nestTourism{
+    margin-top: 26px;
+    /*height: 800px;*/
+}
+.content .nestTourism .nestTourismLeft{
+    padding-left: 30px;
+    text-align: left;
+    display: inline-block;
+    /*width: 50%;*/
+    /*height: 800px;*/
+}
+.nestTourismLeftH1{
+    margin-top: 100px;
+}
+.nestTourismLeftP{
+    margin-top: 80px;
+    font-size: 20px;
+    color: #666666;
+}
+.content .nestTourism .nestTourismRight{
+    display: inline-block;
+    /*width: 50%;*/
+    height: 800px;
+    float: left;
+}
+
+.content .nestTourism .nestTourismRight img{
+    height: 561px;
+    width: 90%;
+    margin-top: 73px;
+    margin-left: 10%;
+}
+footer{
+    height: 98px;
+    background-color: #212020;
+}
+
+footer .nestFooterContainer{
+    height: 98px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer .nestFooterContainer img{
+    display: inline-block;
+    margin-top: 30px;
+}
+
+footer .nestFooterContainer .nestFooterLeft{
+    position: relative;
+    top: 15px;
+    margin-left: 80px;
+    display: inline-block;
+}
+footer .nestFooterContainer .nestFooterLeft p{
+    color: #585858;
+}
+footer .nestFooterContainer .nestFooterRight{
+    float: right;
+    margin-top: 20px;
+}
+footer .nestFooterContainer .nestFooterRight p{
+    color: #ffffff;
+}
