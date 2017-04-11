@@ -2,9 +2,80 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="public/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/intro.css">
     <title>房间详情</title>
 </head>
 <body>
-    <%= title %>
+<header class="row">
+    <div class="navContainer row">
+        <div class="col-sm-2 navButton fontColor">首页</div>
+        <div class="col-sm-2 navButton">雀舍其家</div>
+        <div class="col-sm-4 logo">
+            <img src="/img/index/logo.png" alt="logo">
+        </div>
+        <div class="col-sm-2 navButton">舍型展示</div>
+        <div class="col-sm-2 navButton">舍友服务</div>
+        <span id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="visible-xs-block navMenu glyphicon glyphicon-menu-hamburger " aria-hidden="true"></span>
+        <ul id="phoneNav" class="phoneNav">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">雀舍其家</a></li>
+            <li><a href="#">舍型展示</a></li>
+            <li><a href="#">舍友服务</a></li>
+        </ul>
+    </div>
+</header>
+
+
+<footer>
+    <div class="nestFooterContainer">
+        <img src="img/index/foot_logo.png" alt="">
+        <div class="hidden-xs">
+            <div class="nestFooterLeft">
+                <p>@Copyright</p>
+            </div>
+            <div class="nestFooterRight">
+                <p>地址：浙江省舟山市普陀区东港昌正街170号</p>
+                <p>电话：0580-3887474</p>
+            </div>
+        </div>
+        <div>
+            内容区域
+        </div>
+        <div class="visible-xs-block  phoneNestFooter">
+            <div class="phoneNestFooterRight">
+                <p>地址：浙江省舟山市普陀区东港昌正街170号</p>
+                <p>电话：0580-3887474</p>
+            </div>
+            <div class="phoneNestFooterLeft">
+                <p>@Copyright</p>
+            </div>
+        </div>
+
+    </div>
+</footer>
+<script>
+    document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+    window.onresize=function () {
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+    }
+</script>
+<script src="public/jquery-3.1.1.js"></script>
+<script src="public/bootstrap.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.navMenu').click(function () {
+            if($(this).hasClass('glyphicon-menu-hamburger')){
+                $(this).removeClass('glyphicon-menu-hamburger').addClass('glyphicon-remove');
+            }else {
+                $(this).removeClass('glyphicon-remove').addClass('glyphicon-menu-hamburger');
+            }
+            $("#phoneNav").slideToggle(300);
+        })
+
+    })
+</script>
 </body>
 </html>
