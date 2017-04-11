@@ -38,6 +38,17 @@ html,body{
     .content .nestTourism .nestTourismLeft .nestTourismLeftP{
         margin-top: auto;
     }
+    .navImg{
+        background-position-x: 40%;
+        background-size: 80%;
+    }
+    .content .nestOutsideTop p{
+        color: #aaaaaa;
+    }
+    footer .nestFooterContainer{
+        position: relative;
+        width: 100%;
+    }
 }
 
 /*
@@ -96,7 +107,12 @@ header{
 }
 
 .navButton,.logo {
+    white-space:nowrap;
+    text-overflow:ellipsis;
     cursor: pointer;
+}
+.navButton p {
+    white-space:nowrap;
 }
 
 header div{
@@ -118,21 +134,21 @@ nav{
      background-repeat: no-repeat;
 }
 
-nav .navImg{
-    margin-top: 200px;
+.navImg{
+    margin-top: 160px;
     margin-right: auto;
     margin-left: auto;
     background-image: url("../img/index/nest.png");
     height: 390px;
     width: 442px;
-    background-size: cover;
+    /*background-size: cover;*/
     background-repeat: no-repeat;
 }
 
 header .phoneNav{
     display: none;
     position: relative;
-    background-color: rgba(225, 225, 225, .75);
+    background-color: rgba(225, 225, 225, .98);
     padding: 0;
     top: 60px;
     list-style: none;
@@ -192,7 +208,7 @@ nav .dataPicker{
     font-size: 36px;
     font-weight: bold;
 }
-.content .nestOutsideTop p{
+.nestOutsideTop p{
     font-family: "SimHei";
     color: rgb(185, 184, 184);
 }
@@ -222,7 +238,7 @@ nav .dataPicker{
 }
 
 .content .nestSea{
-    border: 1px solid;
+    /*border: 1px solid;*/
     margin-top: 26px;
     /*height: 800px;*/
 }
@@ -244,7 +260,7 @@ nav .dataPicker{
     /*display: inline-block;*/
 }
 .content .nestSea .nestSeaLine{
-    border: 1px solid #666666;
+    border: 1px solid #cfcfcf;
     width: 120px;
     margin-left: 42px;
     margin-bottom: 16px;
@@ -327,7 +343,7 @@ footer{
     background-color: #212020;
 }
 
-footer .nestFooterContainer{
+.nestFooterContainer{
     height: 98px;
     width: 60%;
     margin-left: auto;
@@ -335,6 +351,7 @@ footer .nestFooterContainer{
 }
 
 footer .nestFooterContainer img{
+    width: 88px;
     display: inline-block;
     margin-top: 30px;
 }
@@ -354,4 +371,29 @@ footer .nestFooterContainer .nestFooterRight{
 }
 footer .nestFooterContainer .nestFooterRight p{
     color: #ffffff;
+}
+
+.nestSeaLeft .phoneFont{
+    font-size: 16px;
+}
+
+.divBc{
+    background-color: #f1f1f1;
+}
+
+.phoneNestFooter{
+    top: 10px;
+    position: absolute;
+    right: 0;
+}
+.phoneNestFooterRight {
+    text-align: right;
+}
+
+.phoneNestFooterRight p{
+    color: #ffffff;
+}
+.phoneNestFooterLeft{
+    color: #ffffff;
+    text-align: right;
 }
