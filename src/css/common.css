@@ -1,0 +1,165 @@
+/*
+ ------------以下公共部分css(包含header and footer)-------------
+ */
+html,body{
+  font-family: "Microsoft YaHei","Hiragino Sans GB";
+}
+
+/*
+ 设定首页小于768px的手机屏幕
+ */
+@media screen and (max-width: 768px) {
+  header .navContainer{
+    width: 100%;
+  }
+  .navButton{
+    display: none;
+  }
+  .logo{
+    left: 10px;
+    /* float: left; */
+    position: absolute;
+  }
+
+  footer .nestFooterContainer{
+    position: relative;
+    width: 100%;
+  }
+}
+header{
+  height: 60px;
+  /*width: 100%;*/
+  /*border: 1px solid;*/
+  font-size: 15px;
+}
+
+.navMenu{
+  margin-top: 15px;
+  font-size: 30px;
+  position: absolute;
+  right: 40px;
+}
+
+.navContainer{
+  margin-left: auto;
+  margin-right: auto;
+  height: 60px;
+  width: 60%;
+  /*border: 1px solid yellow;*/
+  font-size: 15px;
+}
+
+.fontColor{
+  color: #5ac6cc;
+}
+
+.navButton,.logo {
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  cursor: pointer;
+}
+.navButton p {
+  white-space:nowrap;
+}
+
+header div{
+  line-height: 60px;
+  text-align: center;
+  height: 60px;
+}
+
+header div img{
+  height: 32px;
+}
+
+header .phoneNav{
+  display: none;
+  position: relative;
+  background-color: rgba(225, 225, 225, .98);
+  padding: 0;
+  top: 60px;
+  list-style: none;
+}
+
+header .phoneNav li {
+  display: block;
+  border-top: 1px solid #888888;
+}
+header .phoneNav li:last-child{
+  display: block;
+  border-bottom: 1px solid #888888;
+}
+
+header .phoneNav a{
+  width: 100%;
+  height:100%;
+  color: #000000;
+  text-decoration: none;
+}
+
+footer{
+  height: 98px;
+  background-color: #212020;
+}
+
+.nestFooterContainer{
+  height: 98px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer .nestFooterContainer img{
+  width: 88px;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+footer .nestFooterContainer .nestFooterLeft{
+  position: relative;
+  bottom: 21px;
+  margin-left: 80px;
+  display: inline-block;
+  left: 60px;
+}
+footer .nestFooterContainer .nestFooterLeft p{
+  color: #585858;
+}
+footer .nestFooterContainer .nestFooterRight{
+  position: relative;
+  float: right;
+  bottom: 38px;
+  /* margin-top: 20px; */
+}
+footer .nestFooterContainer .nestFooterRight p{
+  color: #ffffff;
+}
+
+.nestSeaLeft .phoneFont{
+  font-size: 16px;
+}
+
+.divBc{
+  background-color: #f1f1f1;
+}
+
+.phoneNestFooter{
+  top: 10px;
+  position: absolute;
+  right: 0;
+}
+.phoneNestFooterRight {
+  text-align: right;
+}
+
+.phoneNestFooterRight p{
+  color: #ffffff;
+}
+.phoneNestFooterLeft{
+  color: #ffffff;
+  text-align: right;
+}
+
+/*
+ ------------以上是公共部分css(包含header and footer)-------------
+ */
