@@ -3,59 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="public/bootstrap.css">
+    <link rel="stylesheet" href="../public/bootstrap.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/intro.css">
     <title>雀舍其家</title>
 </head>
 <body>
-<header class="row">
-    <div class="navContainer row">
-        <div class="col-sm-2 navButton">首页</div>
-        <div class="col-sm-2 navButton fontColor">雀舍其家</div>
-        <div class="col-sm-4 logo">
-            <img src="/img/index/logo.png" alt="logo">
+    <header class="row">
+        <div class="navContainer row">
+            <div class="col-sm-2 navButton">首页</div>
+            <div class="col-sm-2 navButton fontColor">雀舍其家</div>
+            <div class="col-sm-4 logo">
+                <img src="/img/index/logo.png" alt="logo">
+            </div>
+            <div class="col-sm-2 navButton">舍型展示</div>
+            <div class="col-sm-2 navButton">舍友服务</div>
+            <span id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="visible-xs-block navMenu glyphicon glyphicon-menu-hamburger " aria-hidden="true"></span>
+            <ul id="phoneNav" class="phoneNav">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">雀舍其家</a></li>
+                <li><a href="#">舍型展示</a></li>
+                <li><a href="#">舍友服务</a></li>
+            </ul>
         </div>
-        <div class="col-sm-2 navButton">舍型展示</div>
-        <div class="col-sm-2 navButton">舍友服务</div>
-        <span id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="visible-xs-block navMenu glyphicon glyphicon-menu-hamburger " aria-hidden="true"></span>
-        <ul id="phoneNav" class="phoneNav">
-            <li><a href="#">首页</a></li>
-            <li><a href="#">雀舍其家</a></li>
-            <li><a href="#">舍型展示</a></li>
-            <li><a href="#">舍友服务</a></li>
-        </ul>
+    </header>
+    <nav></nav>
+    <div id="content">
+
+        <div class="geography center">
+            <h1 class="css_h1">地理优势</h1>
+            <p class="css_p">Geographical advantage</p>
+            <div class="geography_bottom">
+                <p class="first_p">普陀旅游金三角—与佛教圣地普陀山、沙雕故乡朱家尖、桃花岛隔海相望。</p>
+                <p>交通便利—离机场、码头、客运中心均在5分钟车程内。</p>
+                <p class="center_p">闹中取静-毗邻保利大剧院、行政商务楼群、商业广场、电影院等。</p>
+                <p>地址：舟山普陀东港昌正街170号</p>
+                <p class="last_p">电话：0580-3887474</p>
+            </div>
+        </div>
+
+        <div class="coffee center">
+            <h1 class="css_h1">咖啡文化</h1>
+            <p class="css_p">Coffee culture</p>
+            <img class="coffee_img1" src="../img/intro/coffee.jpg" alt="coffee">
+            <p class="coffee_p2">一楼咖啡厅</p>
+            <div class="coffee_div">
+                <p class="coffee_p2">假如你有缘来此，这里有咖啡、酒、有轻食，你留下故事的种子，我们镌刻下你自由行走的花</p>
+            </div>
+            <div class="row coffee_details">
+                <div class="col-md-6 coffee_details_left">
+                    <img src="../img/intro/coffee_desk.jpg" alt="coffee_desk">
+                </div>
+                <div class="col-md-6 coffee_details_right">
+                    <p>大叔的Coffee Menu</p>
+                    <p>-可小憩发呆，可带走所见~请移步到一楼咖啡厅，住宿的舍友有惊喜</p>
+                    <ul>
+                        <li>曼特宁
+                            <p>sdf</p>
+                        </li>
+                        <li>哥伦比亚</li>
+                        <li>哥伦比亚</li>
+                        <li>哥伦比亚</li>
+                        <li>哥伦比亚</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="rooms center">
+            <h1 class="css_h1">特色房型</h1>
+            <p class="css_p">Special room</p>
+            <div class="row left_right_img">
+                <div class="col-md-6">1</div>
+                <div class="col-md-6">2</div>
+            </div>
+            <div class="row  nine_img">
+                <div class="col-md-4">1</div>
+                <div class="col-md-4">2</div>
+                <div class="col-md-4">3</div>
+            </div>
+        </div>
+
+        <div class="rooms center">
+            <h1 class="css_h1">旅游周边</h1>
+            <p class="css_p">Travel around</p>
+            <div class="row left_right_img">
+                <div class="col-md-6">1</div>
+                <div class="col-md-6">2</div>
+            </div>
+        </div>
     </div>
-</header>
 
-
-<footer>
-    <div class="nestFooterContainer">
-        <img src="img/index/foot_logo.png" alt="">
-        <div class="hidden-xs">
-            <div class="nestFooterLeft">
-                <p>@Copyright</p>
+    <footer>
+        <div class="nestFooterContainer">
+            <img src="img/index/foot_logo.png" alt="">
+            <div class="hidden-xs">
+                <div class="nestFooterLeft">
+                    <p>@Copyright</p>
+                </div>
+                <div class="nestFooterRight">
+                    <p>地址：浙江省舟山市普陀区东港昌正街170号</p>
+                    <p>电话：0580-3887474</p>
+                </div>
             </div>
-            <div class="nestFooterRight">
-                <p>地址：浙江省舟山市普陀区东港昌正街170号</p>
-                <p>电话：0580-3887474</p>
+            <div class="visible-xs-block  phoneNestFooter">
+                <div class="phoneNestFooterRight">
+                    <p>地址：浙江省舟山市普陀区东港昌正街170号</p>
+                    <p>电话：0580-3887474</p>
+                </div>
+                <div class="phoneNestFooterLeft">
+                    <p>@Copyright</p>
+                </div>
             </div>
+    
         </div>
-        <div>
-            内容区域
-        </div>
-        <div class="visible-xs-block  phoneNestFooter">
-            <div class="phoneNestFooterRight">
-                <p>地址：浙江省舟山市普陀区东港昌正街170号</p>
-                <p>电话：0580-3887474</p>
-            </div>
-            <div class="phoneNestFooterLeft">
-                <p>@Copyright</p>
-            </div>
-        </div>
-
-    </div>
-</footer>
+    </footer>
 <script>
     document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
     window.onresize=function () {
