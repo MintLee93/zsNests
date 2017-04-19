@@ -84,6 +84,10 @@ nav{
     color: #343434;
 }
 
+#content .coffee .coffee_details_left img{
+   width: 100%;
+}
+
 #content .coffee .coffee_details div {
     /*border: 1px solid;*/
     /*height: 600px;*/
@@ -96,12 +100,21 @@ nav{
 }
 
 #content .rooms .left_right_img div{
-    height: 300px;
     border: 1px solid;
 }
 
+#content .rooms .left_right_img  div img{
+    width: 98%;
+}
+
 #content .rooms .nine_img div{
-    height: 300px;
+    border: 1px solid #00B7FF;
+}
+#content .rooms .nine_img div img{
+    width: 98%;
+}
+
+#content .rooms .left_right_img div{
     border: 1px solid #00B7FF;
 }
 

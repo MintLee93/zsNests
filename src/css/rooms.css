@@ -1,0 +1,83 @@
+/*
+ 设定首页小于768px的手机屏幕
+ */
+@media screen and (max-width: 768px) {
+    #content{
+        width: 100%;
+    }
+}
+
+nav{
+    text-align: center;
+    background-image: url("../img/rooms/nav.jpg");
+    height: 320px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -96px;
+}
+
+nav p{
+    color: #ffffff;
+    font-size: 34px;
+    line-height: 320px;
+}
+
+.center{
+    margin-top: 40px;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#content .left_right_img_words {
+    position: relative;
+}
+#content .left_right_img_words .price{
+    color: #5ac6cc;
+    font-size: 30px;
+    font-weight:600;
+    margin-top: 10px;
+}
+
+#content .left_right_img_words .button{
+    color: #ffffff;
+    text-align: center;
+    background-color: #ff5f62;
+    margin-top: 10px;
+    width: 160px;
+    height: 44px;
+    border-radius: 10px;
+    line-height: 44px;
+    font-size: 18px;
+    position: absolute;
+    right: 0;
+    top:0;
+    cursor: pointer;
+}
+
+#content .left_right_img_words .room_info{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#content .left_right_img_words .room_reserve{
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+#content .left_right_img_words .button_details{
+    margin-top: 10px;
+    font-size: 16px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #5ac6cc;
+    cursor: pointer;
+}
+
+
+/*.left_img{*/
+    /*height: 440px;*/
+    /*width: 654px;*/
+/*}*/
