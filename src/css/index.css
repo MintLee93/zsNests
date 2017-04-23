@@ -47,11 +47,11 @@
         width: 5rem;
         padding: .22rem;
     }
-    .content .nestSea .nestSeaLeft{
-        padding-left: .2rem;
-    }
+    /*.content .nestSea .nestSeaLeft{*/
+        /*padding-left: .2rem;*/
+    /*}*/
     .nestSeaRight{
-        margin-bottom: 60px;
+        margin-bottom: 26px;
     }
 
 }
@@ -59,7 +59,6 @@
 nav{
     text-align: center;
     background-image: url("../img/index/nav_bg.jpg");
-    height: 800px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -70,22 +69,21 @@ nav{
     margin-right: auto;
     margin-left: auto;
     background-image: url("../img/index/nest.png");
-    height: 390px;
-    width: 442px;
-    /*background-size: cover;*/
+    height: 220px;
+    width: 260px;
+    background-size: 100% 100%;
+    background-position: center;
     background-repeat: no-repeat;
 }
 nav .dataPicker{
-    margin-top: 122px;
-    margin-right: auto;
-    margin-left: auto;
-    height: 72px;
-    width: 394px;
+    margin: 70px auto 50px auto;
+    height: 50px;
+    width: 240px;
     background-color: rgba(225,225,225,0.75);
     /* opacity: 0.75; */
     /*box-shadow: 0 5px 70px #888888;*/
-    line-height: 68px;
-    font-size: 28px;
+    line-height: 50px;
+    font-size: 20px;
     cursor: pointer;
     color: #2d1405;
     border-radius: 50px;
@@ -147,9 +145,18 @@ nav .dataPicker{
     margin-top: 26px;
     /*height: 800px;*/
 }
+
+.content .nestSea .nestSeaH1{
+    /*border: 1px solid;*/
+    margin-top: 1px;
+    margin-bottom: 10px;
+    /*height: 800px;*/
+}
+
 .nestSeaLeft{
-    /*padding-right: 36px;*/
-    padding-left: 10px;
+    padding-left: 60px;
+    padding-right: 30px;
+    padding-bottom: 60px;
     text-align: left;
     display: inline-block;
     /*width: 50%;*/
@@ -157,7 +164,7 @@ nav .dataPicker{
 }
 
 .nestSeaP{
-    margin-top: 80px;
+    margin-top: 40px;
     font-size: 20px;
     color: #666666;
 }
@@ -191,13 +198,13 @@ nav .dataPicker{
     margin-right: auto;
     margin-left: auto;
     background-color: #ffffff;
-    height: 650px;
+    height: 570px;
     position: relative;
  }
 
 .content .nestDesk .nestDeskFont h2{
-    padding-bottom: 66px;
-    padding-top: 108px;
+    padding-bottom: 40px;
+    padding-top: 70px;
 }
 
 
@@ -216,6 +223,7 @@ nav .dataPicker{
     /*height: 800px;*/
 }
 .content .nestTourism .nestTourismLeft{
+    padding-right: 60px;
     padding-left: 30px;
     text-align: left;
     display: inline-block;
@@ -223,7 +231,7 @@ nav .dataPicker{
     /*height: 800px;*/
 }
 .nestTourismLeftH1{
-    margin-top: 100px;
+    margin-top: 60px;
 }
 .nestTourismLeftP{
     margin-top: 80px;
@@ -233,14 +241,14 @@ nav .dataPicker{
 .content .nestTourism .nestTourismRight{
     display: inline-block;
     /*width: 50%;*/
-    height: 800px;
+    height: 680px;
     float: left;
 }
 
 .content .nestTourism .nestTourismRight img{
     height: 561px;
     width: 90%;
-    margin-top: 73px;
+    margin-top: 60px;
     margin-left: 10%;
 }
 
