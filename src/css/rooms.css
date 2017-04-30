@@ -7,6 +7,10 @@
     }
 }
 
+header .phoneNav{
+    z-index: 2;
+}
+
 nav{
     text-align: center;
     background-image: url("../img/rooms/nav.jpg");
