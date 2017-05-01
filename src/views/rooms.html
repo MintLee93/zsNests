@@ -9,91 +9,92 @@
     <title>房型列表</title>
 </head>
 <body>
-    <header class="row">
-        <div class="navContainer row">
-            <div class="col-sm-2 navButton">首页</div>
-            <div class="col-sm-2 navButton">雀舍其家</div>
-            <div class="col-sm-4 logo">
-                <img src="/img/index/logo.png" alt="logo">
-            </div>
-            <div class="col-sm-2 navButton fontColor">舍型展示</div>
-            <div class="col-sm-2 navButton">舍友服务</div>
-            <span id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="visible-xs-block navMenu glyphicon glyphicon-menu-hamburger " aria-hidden="true"></span>
-            <ul id="phoneNav" class="phoneNav">
-                <li><a href="#">首页</a></li>
-                <li><a href="#">雀舍其家</a></li>
-                <li><a href="#">舍型展示</a></li>
-                <li><a href="#">舍友服务</a></li>
-            </ul>
+<header class="row">
+    <div class="navContainer row">
+        <div class="col-sm-2 navButton fontColor"><a href="/">首页</a></div>
+        <div class="col-sm-2 navButton">雀舍其家</div>
+        <div class="col-sm-4 logo">
+            <img src="/img/index/logo.png" alt="logo">
         </div>
-    </header>
+        <div class="col-sm-2 navButton"><a href="/rooms">舍型展示</a></div>
+        <div class="col-sm-2 navButton">舍友服务</div>
+        <span id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"
+              class="visible-xs-block navMenu glyphicon glyphicon-menu-hamburger " aria-hidden="true"></span>
+        <ul id="phoneNav" class="phoneNav">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">雀舍其家</a></li>
+            <li><a href="#">舍型展示</a></li>
+            <li><a href="#">舍友服务</a></li>
+        </ul>
+    </div>
+</header>
 
-    <nav class="hidden-xs">
-        <p>舍型展示</p>
-    </nav>
+<nav class="hidden-xs">
+    <p>舍型展示</p>
+</nav>
 
-    <div id="content" class="center">
-        <div class="row left_right_img">
-            <div class="col-md-6 left_img">
-                <div id="carousel1" data-interval="false" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <img src="../img/rooms/forest_twin_room.jpg" alt="forest_twin_room">
-                        </div>
-                        <div class="item">
-                            <img src="../img/rooms/forest_twin_room.jpg" alt="forest_twin_room">
-                        </div>
+<div id="content" class="center">
+    <div class="row left_right_img">
+        <div class="col-md-6 left_img">
+            <div id="carousel1" data-interval="false" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="../img/rooms/forest_twin_room.jpg" alt="forest_twin_room">
                     </div>
-                    <a class="left carousel-control" href="#carousel1" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel1" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                    <div class="item">
+                        <img src="../img/rooms/forest_twin_room.jpg" alt="forest_twin_room">
+                    </div>
                 </div>
-                <div class="left_right_img_words">
-                    <p class="price"><span>￥298</span> 森林双床房（限量特惠）</p>
-                    <p class="button">
-                        客房预定
-                    </p>
-                    <p class="room_info">双早 双床 可住2人</p>
-                    <p class="room_reserve">不可取消 确认快</p>
-                    <p class="button_details">查看详情</p>
-                </div>
+                <a class="left carousel-control" href="#carousel1" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel1" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-            <div class="col-md-6">
-                <div id="carousel2" data-interval="false"  class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <img src="../img/rooms/forest_twin_room.jpg" alt="forest_twin_room">
-                        </div>
-                        <div class="item">
-                            <img src="../img/rooms/forest_twin_room.jpg" alt="forest_twin_room">
-                        </div>
+            <div class="left_right_img_words">
+                <p class="price"><span>￥298</span> 森林双床房（限量特惠）</p>
+                <p class="button">
+                    <a href="/detail/0001">客房预定</a>
+                </p>
+                <p class="room_info">双早 双床 可住2人</p>
+                <p class="room_reserve">不可取消 确认快</p>
+                <p class="button_details">查看详情</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div id="carousel2" data-interval="false" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="../img/rooms/forest_twin_room.jpg" alt="forest_twin_room">
                     </div>
-                    <a class="left carousel-control" href="#carousel2" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel2" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                    <div class="item">
+                        <img src="../img/rooms/forest_twin_room.jpg" alt="forest_twin_room">
+                    </div>
                 </div>
-                <div class="left_right_img_words">
-                    <p class="price"><span>￥298</span> 森林双床房（限量特惠）</p>
-                    <p class="button">
-                        客房预定
-                    </p>
-                    <p class="room_info">双早 双床 可住2人</p>
-                    <p class="room_reserve">不可取消 确认快</p>
-                    <p class="button_details">查看详情</p>
-                </div>
+                <a class="left carousel-control" href="#carousel2" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel2" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div class="left_right_img_words">
+                <p class="price"><span>￥298</span> 森林双床房（限量特惠）</p>
+                <p class="button">
+                    客房预定
+                </p>
+                <p class="room_info">双早 双床 可住2人</p>
+                <p class="room_reserve">不可取消 确认快</p>
+                <p class="button_details">查看详情</p>
             </div>
         </div>
     </div>
+</div>
 
 <footer>
     <div class="nestFooterContainer">
@@ -121,7 +122,7 @@
 </footer>
 <script>
     document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
-    window.onresize=function () {
+    window.onresize = function () {
         document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
     }
 </script>
@@ -130,9 +131,9 @@
 <script>
     $(document).ready(function () {
         $('.navMenu').click(function () {
-            if($(this).hasClass('glyphicon-menu-hamburger')){
+            if ($(this).hasClass('glyphicon-menu-hamburger')) {
                 $(this).removeClass('glyphicon-menu-hamburger').addClass('glyphicon-remove');
-            }else {
+            } else {
                 $(this).removeClass('glyphicon-remove').addClass('glyphicon-menu-hamburger');
             }
             $("#phoneNav").slideToggle(300);

@@ -2,11 +2,21 @@ var express = require('express');
 var router = express.Router();
 var path = require('path');
 
-var room = require("../db/rooms.json");
+var db = require("../db/rooms.json");
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('detail', { title: 'Express2222234' });
+router.get('/:id', function(req, res, next) {
+  var id = req.params.id;
+  var rooms = db.rooms;
+  var room = {};
+  for(var i = 0; i < rooms.length; i++) {
+    if (rooms[i].id == id) {
+      console.log(rooms[i].name);
+      room = rooms[i];
+      break
+    }
+  }
+  res.render('detail', {room: room});
 });
 
 module.exports = router;
