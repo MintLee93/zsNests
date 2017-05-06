@@ -1,68 +1,3 @@
-
-
-/*
- 设定首页小于768px的手机屏幕
- */
-@media screen and (max-width: 768px) {
-    .content .nestSea h1{
-        font-size: 24px;
-    }
-    /*.content .nestSea h1,h2,p{*/
-    /*margin-left: 30px;*/
-    /*}*/
-    .content .nestSea .nestSeaP{
-        font-size: 16px;
-        line-height: 30px;
-        margin-top: auto;
-    }
-    .content .nestSea .nestSeaRight img{
-        margin-left: 5%;
-    }
-    .content .nestTourism .nestTourismRight img{
-        /*height: 561px; */
-        width: 90%;
-        /* margin-top: 73px; */
-        margin-left: 5%;
-    }
-    .content .nestTourism .nestTourismLeft h1,h2,p{
-        margin-top: auto;
-    }
-    .content .nestTourism .nestTourismLeft .nestTourismLeftP{
-        margin-top: auto;
-    }
-    .navImg{
-        background-position-x: 40%;
-        background-size: 80%;
-    }
-    .content .nestOutsideTop p{
-        color: #aaaaaa;
-    }
-}
-
-/*
- 设定首页大于768px的屏幕
- */
-@media screen and (min-width: 768px) {
-    .content .nestOutsideTop h1{
-        margin-bottom: 85px;
-        font-size: 55px;
-        font-family: "SimHei";
-        margin-top: .6rem;
-        font-weight: bold;
-    }
-    .content .nestOutsideImg img{
-        width: 5rem;
-        padding: .22rem;
-    }
-    /*.content .nestSea .nestSeaLeft{*/
-    /*padding-left: .2rem;*/
-    /*}*/
-    .nestSeaRight{
-        margin-bottom: 26px;
-    }
-
-}
-
 nav{
     text-align: center;
     background-image: url("../img/index/nav_bg.jpg");
@@ -138,7 +73,7 @@ nav .dataPicker{
     width: 100%;
 }
 .content .nestOutsideImg{
-    margin-bottom: .3rem;
+    /*margin-bottom: .3rem;*/
     /*position: relative;*/
     z-index: 2;
     /*margin-left: calc(50% - 500px);*/
@@ -154,10 +89,14 @@ nav .dataPicker{
     width: 100%;
 }
 
-.content .nestSea{
+.content .wrap{
+    padding-top: 86px;
+    padding-bottom: 70px;
     /*border: 1px solid;*/
-    margin-top: 26px;
     /*height: 800px;*/
+}
+.content .nestTourism {
+    padding-bottom: 60px;
 }
 
 .content .nestSea .nestSeaH1{
@@ -174,7 +113,6 @@ nav .dataPicker{
 .nestSeaLeft{
     padding-left: 60px;
     padding-right: 30px;
-    padding-bottom: 60px;
     text-align: left;
     display: inline-block;
     /*width: 50%;*/
@@ -213,7 +151,6 @@ nav .dataPicker{
 }
 
 .nestSeaRightImg{
-    margin-bottom: 60px;
     width: 90%;
 }
 
@@ -228,7 +165,6 @@ nav .dataPicker{
 .content .nestDesk .nestDeskFont{
     text-align: center;
     top: 100px;
-    width: 1000px;
     margin-right: auto;
     margin-left: auto;
     background-color: #ffffff;
@@ -252,21 +188,15 @@ nav .dataPicker{
     font-size: 20px;
 }
 
-.content .nestTourism{
-    margin-top: 26px;
-    /*height: 800px;*/
-}
 .content .nestTourism .nestTourismLeft{
-    padding-right: 60px;
-    padding-left: 30px;
+    padding-right: 50px;
+    padding-left: 50px;
     text-align: left;
     display: inline-block;
     /*width: 50%;*/
     /*height: 800px;*/
 }
-.nestTourismLeftH1{
-    margin-top: 60px;
-}
+
 .nestTourismLeftP{
     margin-top: 80px;
     font-size: 20px;
@@ -275,14 +205,93 @@ nav .dataPicker{
 .content .nestTourism .nestTourismRight{
     display: inline-block;
     /*width: 50%;*/
-    height: 680px;
     float: left;
+    padding-left: 6%;
 }
 
 .content .nestTourism .nestTourismRight img{
-    height: 561px;
-    width: 90%;
-    margin-top: 60px;
-    margin-left: 10%;
+    width: 100%;
 }
 
+
+/*
+ 设定首页小于768px的手机屏幕
+ */
+@media screen and (max-width: 768px) {
+
+    .content .wrap{
+        padding-top: 36px;
+        padding-bottom: 30px;
+        /*border: 1px solid;*/
+        /*height: 800px;*/
+    }
+    .content .nestTourism {
+        padding-bottom: 30px;
+    }
+
+    .content .nestSea h1{
+        font-size: 24px;
+    }
+    /*.content .nestSea h1,h2,p{*/
+    /*margin-left: 30px;*/
+    /*}*/
+    .content .nestSea .nestSeaP{
+        font-size: 16px;
+        line-height: 30px;
+        margin-top: auto;
+    }
+    .content .nestSea .nestSeaRight img{
+        margin-left: 5%;
+    }
+    .content .nestTourism .nestTourismRight img{
+        /*height: 561px; */
+        width: 90%;
+        /* margin-top: 73px; */
+    }
+    .content .nestTourism .nestTourismLeft h1,h2,p{
+        margin-top: auto;
+    }
+    .content .nestTourism .nestTourismLeft .nestTourismLeftP{
+        margin-top: auto;
+    }
+    .navImg{
+        background-position-x: 40%;
+        background-size: 80%;
+    }
+    .content .nestOutsideTop p{
+        color: #aaaaaa;
+    }
+}
+
+
+/*
+ 设定首页大于768px的屏幕
+ */
+@media screen and (min-width: 768px) and (max-width: 992px)  {
+    .content .nestOutsideTop h1{
+        margin-bottom: 85px;
+        font-size: 55px;
+        font-family: "SimHei";
+        margin-top: .6rem;
+        font-weight: bold;
+    }
+    .content .nestOutsideImg img{
+        width: 5rem;
+        padding: .22rem;
+    }
+    /*.content .nestSea .nestSeaLeft{*/
+    /*padding-left: .2rem;*/
+    /*}*/
+    .nestSeaRight{
+        margin-bottom: 26px;
+    }
+    .nestSeaRightImg {
+        margin-left: 5%;
+        margin-top: 40px;
+    }
+    .nestTourismRight img{
+        padding-right: 6%;
+        margin-bottom: 40px;
+    }
+
+}

@@ -118,7 +118,7 @@ footer{
 
 .nestFooterContainer{
   height: 98px;
-  width: 60%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -127,6 +127,7 @@ footer .nestFooterContainer img{
   width: 88px;
   display: inline-block;
   margin-top: 30px;
+  margin-left: 30px;
 }
 
 footer .nestFooterContainer .nestFooterLeft{
@@ -158,9 +159,10 @@ footer .nestFooterContainer .nestFooterRight p{
 }
 
 .phoneNestFooter{
-  top: 10px;
+  top: 26px;
   position: absolute;
-  right: 0;
+  right: 30px;
+
 }
 .phoneNestFooterRight {
   text-align: right;
