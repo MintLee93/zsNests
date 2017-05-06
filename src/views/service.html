@@ -1,39 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="public/bootstrap.css">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/intro.css">
+    <link rel="stylesheet" href="css/service.css">
     <title>舍型服务</title>
 </head>
 <body>
 <header class="row">
     <div class="navContainer row">
-        <div class="col-sm-2 navButton">首页</div>
-        <div class="col-sm-2 navButton">雀舍其家</div>
+        <div class="col-sm-2 navButton"><a class="header_a_button" href="/">首页</a></div>
+        <div class="col-sm-2 navButton"><a class="header_a_button" href="/intro">雀舍其家</a></div>
         <div class="col-sm-4 logo">
-            <img src="/img/index/logo.png" alt="logo">
+            <img id="logo" src="/img/index/logo.png" alt="logo">
         </div>
-        <div class="col-sm-2 navButton">舍型展示</div>
-        <div class="col-sm-2 navButton fontColor">舍友服务</div>
-        <span id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="visible-xs-block navMenu glyphicon glyphicon-menu-hamburger " aria-hidden="true"></span>
+        <div class="col-sm-2 navButton"><a class="header_a_button" href="/rooms">舍型展示</a></div>
+        <div class="col-sm-2 navButton"><a class="header_a_button fontColor" href="/service">舍友服务</a></div>
+        <span id="dropdownMenu1" class="visible-xs-block navMenu glyphicon glyphicon-menu-hamburger"></span>
         <ul id="phoneNav" class="phoneNav">
-            <li><a href="#">首页</a></li>
-            <li><a href="#">雀舍其家</a></li>
-            <li><a href="#">舍型展示</a></li>
-            <li><a href="#">舍友服务</a></li>
+            <li><a href="/">首页</a></li>
+            <li><a href="/intro">雀舍其家</a></li>
+            <li><a href="/rooms">舍型展示</a></li>
+            <li><a href="/service">舍友服务</a></li>
         </ul>
     </div>
 </header>
 
 
-<div>
-    内容区域
+<nav></nav>
+<div id="content" class="center">
+    <div class="content_part1">
+        <h1>会员福利</h1>
+        <div class="font_content">
+            <p>会员福利</p>
+        </div>
+    </div>
+    <div class="content_address">
+        <h1>联系我们</h1>
+        <div class="font_content">
+            <p>浙江省舟山市普陀区东港昌正街170号</p>
+            <p>电话：0580-3887474</p>
+        </div>
+        <div id="allmap"></div>
+
+    </div>
 </div>
-
-
 <footer>
     <div class="nestFooterContainer">
         <img src="img/index/foot_logo.png" alt="">
@@ -81,3 +96,22 @@
 </script>
 </body>
 </html>
+<script type="text/javascript">
+    //百度地图API功能
+    function loadJScript() {
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "http://api.map.baidu.com/api?v=2.0&ak=9yoxSjtG3dTLhCbrNlnRFgHLQNzEknRM&callback=init";
+        document.body.appendChild(script);
+    }
+    function init() {
+        var map = new BMap.Map("allmap");            // 创建Map实例
+        var point = new BMap.Point(122.329309,29.975148); // 创建点坐标
+        map.centerAndZoom(point,18);
+        map.enableScrollWheelZoom();                 //启用滚轮放大缩小
+        var marker = new BMap.Marker(point);  // 创建标注
+        map.addOverlay(marker);               // 将标注添加到地图中
+        marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+    }
+    window.onload = loadJScript;  //异步加载地图
+</script>
