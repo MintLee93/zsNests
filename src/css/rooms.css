@@ -38,24 +38,25 @@ nav p{
 }
 #content .left_right_img_words .price{
     color: #5ac6cc;
-    font-size: 30px;
-    font-weight:600;
+    font-size: 20px;
+    font-weight: 600;
     margin-top: 10px;
 }
 
 #content .left_right_img_words .button{
+    margin: 0;
     color: #ffffff;
     text-align: center;
     background-color: #ff5f62;
-    margin-top: 10px;
-    width: 160px;
-    height: 44px;
-    border-radius: 10px;
-    line-height: 44px;
+    /* margin-top: 10px; */
+    width: 128px;
+    height: 28px;
+    border-radius: 6px;
+    line-height: 28px;
     font-size: 18px;
     position: absolute;
     right: 0;
-    top:0;
+    top: 0;
     cursor: pointer;
 }
 
