@@ -4,12 +4,16 @@
  设定首页小于768px的手机屏幕
  */
 @media screen and (max-width: 768px) {
-    .content .nestSea h1,h2,p{
-        margin-left: 30px;
+    .content .nestSea h1{
+        font-size: 24px;
     }
+    /*.content .nestSea h1,h2,p{*/
+    /*margin-left: 30px;*/
+    /*}*/
     .content .nestSea .nestSeaP{
+        font-size: 16px;
+        line-height: 30px;
         margin-top: auto;
-        margin-left: 30px;
     }
     .content .nestSea .nestSeaRight img{
         margin-left: 5%;
@@ -42,13 +46,16 @@
     .content .nestOutsideTop h1{
         margin-bottom: 85px;
         font-size: 55px;
+        font-family: "SimHei";
+        margin-top: .6rem;
+        font-weight: bold;
     }
     .content .nestOutsideImg img{
         width: 5rem;
         padding: .22rem;
     }
     /*.content .nestSea .nestSeaLeft{*/
-        /*padding-left: .2rem;*/
+    /*padding-left: .2rem;*/
     /*}*/
     .nestSeaRight{
         margin-bottom: 26px;
@@ -105,16 +112,23 @@ nav .dataPicker{
 }
 .nestOutsideTop h1{
     color: #000000;
-    /*margin-bottom: .85rem;*/
-    font-family: "SimHei";
-    margin-top: .6rem;
-    font-size: 36px;
-    font-weight: bold;
+    /* margin-bottom: .85rem; */
+    /* font-family: "SimHei"; */
+    margin-top: 1rem;
+    font-size: 30px;
+    /* font-weight: bold; */
 }
 .nestOutsideTop p{
     font-family: "SimHei";
     color: rgb(185, 184, 184);
 }
+
+.nestOutsideTop .nestOutsideTop-xs-p{
+    margin-right: 30px;
+    text-align: left;
+    margin-left: 30px;
+}
+
 .content .nestOutsideBottom{
     left: 0;
     bottom: 0;
@@ -153,10 +167,24 @@ nav .dataPicker{
     /*height: 800px;*/
 }
 
+.black_color{
+    color: #000000;
+}
+
 .nestSeaLeft{
     padding-left: 60px;
     padding-right: 30px;
     padding-bottom: 60px;
+    text-align: left;
+    display: inline-block;
+    /*width: 50%;*/
+    /*height: 800px;*/
+}
+
+.nestSeaLeft-xs{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 36px;
     text-align: left;
     display: inline-block;
     /*width: 50%;*/
@@ -168,13 +196,19 @@ nav .dataPicker{
     font-size: 20px;
     color: #666666;
 }
+
+.Individualization{
+    /*margin-top: 40px;*/
+    margin-bottom: 26px;
+    font-size: 16px;
+}
 .content .nestSea .nestSeaRight{
     /*display: inline-block;*/
 }
 .content .nestSea .nestSeaLine{
     border: 1px solid #cfcfcf;
     width: 120px;
-    margin-left: 42px;
+    margin-left: 30px;
     margin-bottom: 16px;
 }
 
@@ -189,7 +223,7 @@ nav .dataPicker{
     background-position:center ;
     background-repeat: no-repeat;
     height: 800px;
- }
+}
 
 .content .nestDesk .nestDeskFont{
     text-align: center;
@@ -200,7 +234,7 @@ nav .dataPicker{
     background-color: #ffffff;
     height: 570px;
     position: relative;
- }
+}
 
 .content .nestDesk .nestDeskFont h2{
     padding-bottom: 40px;
@@ -210,13 +244,13 @@ nav .dataPicker{
 
 .content .nestDesk .nestDeskFont h1{
     margin-top: 30px;
- }
+}
 
 .content .nestDesk .nestDeskFont p{
     margin-top: 44px;
     color: #666666;
     font-size: 20px;
- }
+}
 
 .content .nestTourism{
     margin-top: 26px;
@@ -234,18 +268,19 @@ nav .dataPicker{
     margin-top: 60px;
 }
 .nestTourismLeftP{
-    margin-top: 46px;
+    margin-top: 80px;
     font-size: 20px;
     color: #666666;
 }
 .content .nestTourism .nestTourismRight{
     display: inline-block;
     /*width: 50%;*/
-    height: 540px;
+    height: 680px;
     float: left;
 }
 
 .content .nestTourism .nestTourismRight img{
+    height: 561px;
     width: 90%;
     margin-top: 60px;
     margin-left: 10%;
