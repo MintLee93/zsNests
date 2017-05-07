@@ -16,7 +16,7 @@ a:hover, a:visited, a:link, a:active {
 /*
  设定首页小于768px的手机屏幕
  */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   header .navContainer{
     width: 100%;
   }
