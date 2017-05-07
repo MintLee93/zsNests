@@ -1,9 +1,13 @@
 /*
  ------------以下公共部分css(包含header and footer)-------------
  */
+
 html,body{
+  margin: 0;
+  padding: 0;
   font-family: "Microsoft YaHei","Hiragino Sans GB";
 }
+
 a:hover, a:visited, a:link, a:active {
   color: inherit;
   text-decoration: none;

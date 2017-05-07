@@ -48,50 +48,78 @@
     </div>
 </nav>
 <div class="content">
-    <div class="wrap">
-        <ul>
-            <li class="item">
-                <div class="title">
-                    <span class="link-color">舍型展示</span>  <span class="content-color"> &gt; 房间详情</span>
-                </div>
-                <div class="line"></div>
-                <div class="content">
-                    <ul>
-                        <li>
-                            <span>双早</span>
-                        </li>
-                        <li>
-                            <span>面积</span>
-                        </li>
-                        <li>
-                            <span>楼层</span>
-                        </li>
-                        <li>
-                            <span>床型(不可加床)</span>
-                        </li>
-                        <li>
-                            <span>无烟房</span>
-                        </li>
-                        <li>
-                            <span>最多入住</span>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-        </ul>
-        <ul class="intro">
-            <% detail.intro.forEach(function(item){ %>
-            <li>
-                <div class="title link-color">
-                    <%= item.name %>
-                </div>
-                <div class="line"></div>
-                <div class="content content-color">
-                    <%= item.desc %>
-                </div>
-            </li>
-            <% }) %>
-        </ul>
+    <div class="wrap row">
+        <div class="col-md-8">
+            <ul class="desc">
+                <li class="item">
+                    <div class="title">
+                        <a href="/rooms" class="link-color">舍型展示</a>  <span class="content-color"> &gt; 房间详情</span>
+                    </div>
+                    <div class="line"></div>
+                    <div class="content">
+                        <h3>
+                            <%= detail.room.name %>
+                        </h3>
+                        <ul class="service">
+                            <li>
+                                <img class="icon" src="../img/detail/breakfast.png" alt="双早">
+                                <p>双早</p>
+                            </li>
+                            <li>
+                                <img class="icon" src="../img/detail/breakfast.png" alt="双早">
+                                <p>面积</p>
+                            </li>
+                            <li>
+                                <img class="icon" src="../img/detail/breakfast.png" alt="双早">
+                                <p>楼层</p>
+                            </li>
+                            <li class="right">
+                                <img class="icon" src="../img/detail/wifi.png" alt="双早">
+                                <p>wifi</p>
+                            </li>
+                        </ul>
+                        <ul class="service">
+                            <li>
+                                <img class="icon" src="../img/detail/wifi.png" alt="双早">
+                                <p>wifi</p>
+                            </li>
+                            <li>
+                                <img class="icon" src="../img/detail/bed.png" alt="双早">
+                                <p>床型
+                                    <% if (detail.room.additional) { %>
+                                     <span>(可加床)</span>
+                                    <% } %>
+                                </p>
+                            </li>
+                            <li>
+                                <img class="icon" src="../img/detail/smoke.png" alt="双早">
+                                <p>无烟房</p>
+                            </li>
+                            <li class="right">
+                                <img class="icon" src="../img/detail/breakfast.png" alt="双早">
+                                <p>最多入住</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <ul class="intro">
+                <% detail.intro.forEach(function(item){ %>
+                <li class="item">
+                    <div class="title link-color">
+                        <%= item.name %>
+                    </div>
+                    <div class="line"></div>
+                    <div class="content content-color">
+                        <%= item.desc %>
+                    </div>
+                </li>
+                <% }) %>
+            </ul>
+        </div>
+        <div class="col-md-3 col-md-offset-1">
+            <button class="btn btn-danger">立即预定</button>
+        </div>
     </div>
 </div>
 <footer class="row">

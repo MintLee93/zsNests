@@ -6,7 +6,7 @@
 			"bedType": "双床",
 			"avatar": "2.jpg",
 			"price": "580",
-			"additional": false,
+			"additional": true,
 			"area": 35,
 			"floor": false,
 			"images": [
