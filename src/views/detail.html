@@ -3,17 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../public/bootstrap.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/index.css">
     <title><%= room.name %></title>
 </head>
 <body>
-<div><%= room.name %></div>
-<div><%= room.bedType %></div>
-<div><%= room.avatar %></div>
-<div><%= room.price %></div>
-<div><%= room.price %></div>
-<div><%= room.additional %></div>
-<div><%= room.area %></div>
-<div><%= room.floor %></div>
-<div><%= room.maxNum %></div>
+<header class="row">
+    <div class="navContainer row">
+        <div class="col-sm-2 navButton"><a class="header_a_button fontColor" href="/">首页</a></div>
+        <div class="col-sm-2 navButton"><a class="header_a_button" href="/intro">雀舍其家</a></div>
+        <div class="col-sm-4 logo">
+            <img id="logo" src="../img/index/logo.png" alt="logo">
+        </div>
+        <div class="col-sm-2 navButton"><a class="header_a_button" href="/rooms">舍型展示</a></div>
+        <div class="col-sm-2 navButton"><a class="header_a_button" href="/service">舍友服务</a></div>
+        <span id="dropdownMenu1" class="visible-xs-block navMenu glyphicon glyphicon-menu-hamburger"></span>
+        <ul id="phoneNav" class="phoneNav">
+            <li><a href="/">首页</a></li>
+            <li><a href="/intro">雀舍其家</a></li>
+            <li><a href="/rooms">舍型展示</a></li>
+            <li><a href="/service">舍友服务</a></li>
+        </ul>
+    </div>
+</header>
+<nav class="row">
+    <div class="navImg"></div>
+    <div class="dataPicker">
+        客房预定
+    </div>
+</nav>
+<div class="content">
+    <div class="nestOutside row">
+        <div class="nestOutsideTop">
+            <!--屏幕小于768隐藏该div-->
+            <div class="hidden-xs">
+                <h1>雀舍咖啡城市民居</h1>
+                <p>是舟山雀舍旅业有限公司倾力打造的集『住宿、休闲、餐饮』为一体的个性化体验场所</p>
+                <p>有设计新颖、风格独特的客房51间（套）</p>
+                <p>可提供自助早餐、精品咖啡、各种酒饮及轻食</p>
+                <p>地处普陀行政商务、旅游文化、生活休闲中心。</p>
+            </div>
+            <!--屏幕小于768展示该div-->
+            <div class="visible-xs-block">
+                <h1>雀舍咖啡城市民居</h1>
+                <p class="nestOutsideTop-xs-p">是舟山雀舍旅业有限公司倾力打造的集『住宿、休闲、餐饮』为一体的个性化体验场所，有设计新颖、风格独特的客房51间（套），可提供自助早餐、精品咖啡、各种酒饮及轻食，地处普陀行政商务、旅游文化、生活休闲中心。</p>
+            </div>
+        </div>
+        <div class="nestOutsideImg">
+            <img class="nestOutsideImg" src="../img/index/out_side.jpg" alt="nestOutsideImg">
+            <div class="nestOutsideBottom"></div>
+        </div>
+    </div>
+</div>
+<footer class="row">
+    <div class="nestFooterContainer">
+        <img src="../img/index/foot_logo.png" alt="">
+        <div class="hidden-xs">
+            <div class="nestFooterLeft">
+                <p>@Copyright</p>
+            </div>
+            <div class="nestFooterRight">
+                <p>地址：浙江省舟山市普陀区东港昌正街170号</p>
+                <p>电话：0580-3887474</p>
+            </div>
+        </div>
+
+        <div class="visible-xs-block  phoneNestFooter">
+            <div class="phoneNestFooterRight">
+                <p>电话：0580-3887474</p>
+            </div>
+            <div class="phoneNestFooterLeft">
+                <p>@Copyright</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!--<div><%= room.name %></div>-->
+<!--<div><%= room.bedType %></div>-->
+<!--<div><%= room.avatar %></div>-->
+<!--<div><%= room.price %></div>-->
+<!--<div><%= room.price %></div>-->
+<!--<div><%= room.additional %></div>-->
+<!--<div><%= room.area %></div>-->
+<!--<div><%= room.floor %></div>-->
+<!--<div><%= room.maxNum %></div>-->
+<script>
+    document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+    window.onresize = function () {
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+    }
+</script>
+<script src="../public/jquery-3.1.1.js"></script>
+<script src="../public/bootstrap.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.navMenu').click(function () {
+            if ($(this).hasClass('glyphicon-menu-hamburger')) {
+                $(this).removeClass('glyphicon-menu-hamburger').addClass('glyphicon-remove');
+            } else {
+                $(this).removeClass('glyphicon-remove').addClass('glyphicon-menu-hamburger');
+            }
+            $("#phoneNav").slideToggle(300);
+        })
+
+    })
+</script>
 </body>
 </html>
