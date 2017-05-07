@@ -7,6 +7,7 @@ var db = require("../db/rooms.json");
 router.get('/:id', function(req, res, next) {
   var id = req.params.id;
   var rooms = db.rooms;
+  var intro = db.intro;
   var room = {};
   for(var i = 0; i < rooms.length; i++) {
     if (rooms[i].id == id) {
@@ -15,7 +16,10 @@ router.get('/:id', function(req, res, next) {
       break
     }
   }
-  res.render('detail', {room: room});
+  res.render('detail', {detail: {
+    room: room,
+    intro: intro
+  }});
 });
 
 module.exports = router;

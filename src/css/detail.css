@@ -1,0 +1,107 @@
+ul li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav {
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.wrap {
+    padding: 20px 6%;
+    height: 320px;
+    position: relative;
+}
+
+.content {
+    /*height: 1000px;*/
+}
+
+.img-bar {
+    position: absolute;
+    bottom: 20px;
+}
+
+.img-bar .arrow {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 20px;
+    padding: 10px 0 0 0;
+    margin: 0;
+}
+
+.img-bar .arrow.left {
+    left: 14px;
+}
+
+.img-bar .arrow.right {
+    left: 366px;
+}
+
+.img-bar .arrow img {
+    height: 30px;
+}
+
+.link-color {
+    color: #5ac6cc;
+}
+
+.title-color {
+    color: #333333;
+}
+
+.content-color {
+    color: #666666;
+}
+
+.line {
+    height: 2px;
+    width: 200px;
+    background-color: #666666;
+}
+
+.img-bar .thumb {
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 322px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+}
+
+.img-bar .thumb li {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+}
+
+.img-bar .thumb img {
+    height: 100%;
+    width: 100%
+}
+
+/*
+ 设定首页小于768px的手机屏幕
+ */
+@media screen and (max-width: 768px) {
+
+    .content .wrap {
+        /*padding-top: 36px;*/
+        /*padding-bottom: 30px;*/
+    }
+}
+
+/*
+ 设定首页大于768px的屏幕
+ */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+}
