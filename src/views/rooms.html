@@ -28,73 +28,114 @@
     </div>
 </header>
 
-    <nav class="hidden-xs">
-        <p>舍型展示</p>
-    </nav>
+<nav class="hidden-xs">
+    <p>舍型展示</p>
+</nav>
+<div class="visible-xs-block phone_text">
+    <img class="phone_text_img" src="../img/index/out_side.jpg" alt="navImg">
+    <div class="phone_text_content">
+        <p class="phone_text_title">舟山雀舍咖啡城市民居</p><span class="phone_text_point">高档型</span>
+        <p class="phone_text_other">2017年开业</p>
+        <p class="phone_text_other">东港街道正街170号1-4层(近普陀区政府)</p>
+    </div>
+</div>
 
-    <div id="content" class="center">
-        <div class="row left_right_img">
-            <div class="col-md-6 left_img">
-                <div id="carousel1" data-interval="false" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <img src="../img/rooms/forest_twin_room.jpg" alt="forest_twin_room">
-                        </div>
-                        <div class="item">
-                            <img src="../img/rooms/forest_twin_room.jpg" alt="forest_twin_room">
-                        </div>
+<div id="content" class="center">
+    <!--<div class="row">-->
+    <div class="row">
+        <% for(var i=0; i<rooms.length; i++) {%>
+        <div class="col-md-6 phone_margin">
+            <div id="carousel<%= rooms[i].id %>" data-interval="false" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <% for(var j=0; j<rooms[i].images.length; j++) {%>
+                    <% if (rooms[i].images[j] == rooms[i].avatar) { %>
+                    <div class="item active">
+                        <img class="img_height" src="<%= '../img/rooms/small/' + rooms[i].id + '/' + rooms[i].images[j] %>" alt="forest_twin_room">
                     </div>
-                    <a class="left carousel-control" href="#carousel1" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel1" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                    <% } else { %>
+                    <div class="item">
+                        <img src="<%= '../img/rooms/small/' + rooms[i].id + '/' + rooms[i].images[j] %>" alt="forest_twin_room">
+                    </div>
+                    <% } %>
+
+                    <% } %>
                 </div>
-                <div class="left_right_img_words">
-                    <p class="price"><span>￥298</span> 森林双床房（限量特惠）</p>
-                    <p class="button">
-                        客房预定
-                    </p>
-                    <p class="room_info">双早 双床 可住2人</p>
-                    <p class="room_reserve">不可取消 确认快</p>
-                    <p class="button_details">查看详情</p>
-                </div>
+                <a class="left carousel-control" href="#carousel<%= rooms[i].id %>" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel<%= rooms[i].id %>" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-            <div class="col-md-6">
-                <div id="carousel2" data-interval="false"  class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <img src="../img/rooms/forest_twin_room.jpg" alt="forest_twin_room">
-                        </div>
-                        <div class="item">
-                            <img src="../img/rooms/forest_twin_room.jpg" alt="forest_twin_room">
-                        </div>
-                    </div>
-                    <a class="left carousel-control" href="#carousel2" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel2" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-                <div class="left_right_img_words">
-                    <p class="price"><span>￥298</span> 森林双床房（限量特惠）</p>
-                    <p class="button">
-                        客房预定
-                    </p>
-                    <p class="room_info">双早 双床 可住2人</p>
-                    <p class="room_reserve">不可取消 确认快</p>
-                    <p class="button_details">查看详情</p>
-                </div>
+            <div class="left_right_img_words">
+                <p class="price"><span>￥<%= rooms[i].price %></span><%= rooms[i].name %>（限量特惠）</p>
+                <p class="room_info">双早 <%= rooms[i].bedType %> 可住<%= rooms[i].maxNum %>人</p>
+                <p class="room_reserve">不可取消 确认快</p>
+                <p class="button_details"><a href="/detail/<%= rooms[i].id %>">查看详情</a></p>
+                <p class="button">客房预定</p>
             </div>
         </div>
+        <% } %>
     </div>
 
+    <!--<div class="col-md-6 phone_margin">-->
+    <!--<div id="carousel1" data-interval="false" class="carousel slide" data-ride="carousel">-->
+    <!--<div class="carousel-inner" role="listbox">-->
+    <!--<div class="item active">-->
+    <!--<img src="../img/rooms/forest_twin_room.jpg" alt="forest_twin_room">-->
+    <!--</div>-->
+    <!--<div class="item">-->
+    <!--<img src="../img/rooms/forest_twin_room.jpg" alt="forest_twin_room">-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<a class="left carousel-control" href="#carousel1" role="button" data-slide="prev">-->
+    <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+    <!--<span class="sr-only">Previous</span>-->
+    <!--</a>-->
+    <!--<a class="right carousel-control" href="#carousel1" role="button" data-slide="next">-->
+    <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+    <!--<span class="sr-only">Next</span>-->
+    <!--</a>-->
+    <!--</div>-->
+    <!--<div class="left_right_img_words">-->
+    <!--<p class="price"><span>￥298</span> 森林双床房（限量特惠）</p>-->
+    <!--<p class="room_info">双早 双床 可住2人</p>-->
+    <!--<p class="room_reserve">不可取消 确认快</p>-->
+    <!--<p class="button_details">查看详情</p>-->
+    <!--<p class="button">客房预定</p>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="col-md-6 phone_margin">-->
+    <!--<div id="carousel2" data-interval="false"  class="carousel slide" data-ride="carousel">-->
+    <!--<div class="carousel-inner" role="listbox">-->
+    <!--<div class="item active">-->
+    <!--<img src="../img/rooms/forest_twin_room.jpg" alt="forest_twin_room">-->
+    <!--</div>-->
+    <!--<div class="item">-->
+    <!--<img src="../img/rooms/forest_twin_room.jpg" alt="forest_twin_room">-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<a class="left carousel-control" href="#carousel2" role="button" data-slide="prev">-->
+    <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+    <!--<span class="sr-only">Previous</span>-->
+    <!--</a>-->
+    <!--<a class="right carousel-control" href="#carousel2" role="button" data-slide="next">-->
+    <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+    <!--<span class="sr-only">Next</span>-->
+    <!--</a>-->
+    <!--</div>-->
+    <!--<div class="left_right_img_words">-->
+    <!--<p class="price"><span>￥298</span> 森林双床房（限量特惠）</p>-->
+    <!--<p class="room_info">双早 双床 可住2人</p>-->
+    <!--<p class="room_reserve">不可取消 确认快</p>-->
+    <!--<p class="button_details">查看详情</p>-->
+    <!--<p class="button">客房预定</p>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+</div>
 <footer>
     <div class="nestFooterContainer">
         <img src="img/index/foot_logo.png" alt="">

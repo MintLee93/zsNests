@@ -3,7 +3,22 @@
  */
 @media screen and (max-width: 768px) {
     #content{
-        width: 100%;
+        width: 90%;
+        margin-top:0;
+    }
+    .phone_margin{
+        margin-top:20px;
+    }
+    .left_right_img_words .button{
+        position: relative;
+    }
+    .left_right_img_words .button_details{
+        top: 0;
+        margin-top:0;
+        font-size: .26rem;
+    }
+    .left_right_img_words .price{
+        font-size: .3rem;
     }
 }
 
@@ -36,19 +51,20 @@ nav p{
 #content .left_right_img_words {
     position: relative;
 }
-#content .left_right_img_words .price{
+
+.price{
     color: #5ac6cc;
-    font-size: 20px;
+    font-size: .1rem;
     font-weight: 600;
     margin-top: 10px;
 }
 
-#content .left_right_img_words .button{
+.button{
     margin: 0;
     color: #ffffff;
     text-align: center;
     background-color: #ff5f62;
-    /* margin-top: 10px; */
+    margin-top: .02rem;
     width: 128px;
     height: 28px;
     border-radius: 6px;
@@ -62,7 +78,7 @@ nav p{
 
 #content .left_right_img_words .room_info{
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
 }
 
@@ -71,7 +87,7 @@ nav p{
     font-size: 14px;
 }
 
-#content .left_right_img_words .button_details{
+.button_details{
     margin-top: 10px;
     font-size: 16px;
     position: absolute;
@@ -79,6 +95,31 @@ nav p{
     bottom: 0;
     color: #5ac6cc;
     cursor: pointer;
+}
+.phone_text_content{
+    margin-top:20px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.phone_text_img{
+    width: 100%;
+}
+.phone_text_title{
+    display: inline-block;
+    font-size: 18px;
+}
+.phone_text_point{
+    margin-left: 10px;
+    color: #a7a7a7;
+}
+.phone_text_other{
+    color: #a7a7a7;
+}
+.img_height{
+    width: 100%;
+    height: 100%;
 }
 
 
