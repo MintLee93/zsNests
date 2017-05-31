@@ -27,14 +27,29 @@ nav {
 }
 
 .wrap .desc .service {
+    margin-top: 20px;
     padding: 0;
 }
 
+.wrap .desc .second {
+    margin-top: 0;
+}
+
 .wrap .desc .service li {
+    width: 120px;
+    height: 136px;
     padding: 10px;
     display: inline-block;
-    margin-right: 60px;
+    overflow: hidden;
+    text-align: center;
+    /*margin-right: 60px;*/
 }
+
+.wrap .desc .second li {
+    width: 120px;
+    height: 100px;
+}
+
 .wrap .desc .service li.right {
     margin-right: 0;
 }
@@ -42,11 +57,17 @@ nav {
 .wrap .desc .service li img{
     width: 60px;
     padding: 10px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 .wrap .desc .service li p{
     margin: auto;
     text-align: center;
+    max-width: 100px;
+    overflow: hidden;
+    white-space: normal;
+　　word-break: break-all; /*支持IE，chrome，FF不支持*/
+　　word-wrap: break-word;/*支持IE，chrome，FF*/
 }
 
 .wrap .intro .item .title {

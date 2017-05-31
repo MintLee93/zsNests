@@ -62,42 +62,57 @@
                         </h3>
                         <ul class="service">
                             <li>
+                                <img class="icon" src="../img/detail/people.png" alt="最多入住">
+                                <p>
+                                    最多入住
+                                    <span><%= detail.room.maxNum %></span>
+                                    人
+                                </p>
+                            </li>
+                            <li>
+                                <img class="icon" src="../img/detail/area.png" alt="面积">
+                                <p>
+                                    面积
+                                    <span><%= detail.room.area %></span>
+                                    m2
+                                </p>
+                            </li>
+                            <li>
+                                <img class="icon" src="../img/detail/floor.png" alt="楼层">
+                                <p>
+                                    楼层
+                                    <span><%= detail.room.floor %></span>
+                                    F
+                                </p>
+                            </li>
+                            <li class="right">
+                                <img class="icon" src="../img/detail/bed.png" alt="床型">
+                                <p>
+                                    <span><%= detail.room.bedType %></span>
+                                    <% if (detail.room.additional) { %>
+                                    <span>(可加床)</span>
+                                    <% } %>
+                                </p>
+                            </li>
+                        </ul>
+                        <ul class="service second">
+                            <li>
                                 <img class="icon" src="../img/detail/breakfast.png" alt="双早">
                                 <p>双早</p>
                             </li>
                             <li>
-                                <img class="icon" src="../img/detail/breakfast.png" alt="双早">
-                                <p>面积</p>
-                            </li>
-                            <li>
-                                <img class="icon" src="../img/detail/breakfast.png" alt="双早">
-                                <p>楼层</p>
-                            </li>
-                            <li class="right">
-                                <img class="icon" src="../img/detail/wifi.png" alt="双早">
+                                <img class="icon" src="../img/detail/wifi.png" alt="WIFI">
                                 <p>wifi</p>
                             </li>
-                        </ul>
-                        <ul class="service">
-                            <li>
-                                <img class="icon" src="../img/detail/wifi.png" alt="双早">
-                                <p>wifi</p>
-                            </li>
-                            <li>
-                                <img class="icon" src="../img/detail/bed.png" alt="双早">
-                                <p>床型
-                                    <% if (detail.room.additional) { %>
-                                     <span>(可加床)</span>
-                                    <% } %>
-                                </p>
-                            </li>
+
                             <li>
                                 <img class="icon" src="../img/detail/smoke.png" alt="双早">
                                 <p>无烟房</p>
                             </li>
+
                             <li class="right">
-                                <img class="icon" src="../img/detail/breakfast.png" alt="双早">
-                                <p>最多入住</p>
+                                <img class="icon" src="../img/detail/airClean.png" alt="净化器">
+                                <p>空气净化器</p>
                             </li>
                         </ul>
                     </div>
@@ -118,7 +133,10 @@
             </ul>
         </div>
         <div class="col-md-3 col-md-offset-1">
-            <button class="btn btn-danger">立即预定</button>
+            <div class="book-wrap">
+                <p><%= detail.room.price %></p>
+                <button class="btn btn-danger">立即预定</button>
+            </div>
         </div>
     </div>
 </div>

@@ -8,7 +8,7 @@
 			"price": "580",
 			"additional": false,
 			"area": 35,
-			"floor": false,
+			"floor": "2-4",
 			"images": [
 				"1.jpg",
 				"2.jpg",
@@ -28,7 +28,7 @@
 			"price": "680",
 			"additional": false,
 			"area": 35,
-			"floor": false,
+			"floor": "2-4",
 			"images": [
 				"1.jpg",
 				"2.jpg",
@@ -55,7 +55,7 @@
 			"price": "830",
 			"additional": false,
 			"area": 35,
-			"floor": false,
+			"floor": "2-4",
 			"images": [
 				"1.jpg",
 				"2.jpg",
@@ -86,7 +86,7 @@
 			"price": "680",
 			"additional": false,
 			"area": 35,
-			"floor": false,
+			"floor": "2-4",
 			"images": [
 				"1.jpg",
 				"2.jpg",
@@ -112,7 +112,7 @@
 			"price": "780",
 			"additional": false,
 			"area": 35,
-			"floor": false,
+			"floor": "2-4",
 			"images": [
 				"1.jpg",
 				"2.jpg",
@@ -132,7 +132,7 @@
 			"price": "1080",
 			"additional": false,
 			"area": 35,
-			"floor": false,
+			"floor": "2-4",
 			"images": [
 				"1.jpg",
 				"2.jpg",
@@ -155,7 +155,7 @@
 			"price": "1280",
 			"additional": false,
 			"area": 35,
-			"floor": false,
+			"floor": "2-4",
 			"images": [
 				"1.jpg",
 				"2.jpg",
@@ -178,7 +178,7 @@
 			"price": "718",
 			"additional": false,
 			"area": 35,
-			"floor": false,
+			"floor": "2-4",
 			"images": [
 				"1.jpg",
 				"2.jpg",
@@ -201,7 +201,7 @@
 			"price": "1692",
 			"additional": false,
 			"area": 35,
-			"floor": false,
+			"floor": "2-4",
 			"images": [
 				"1.jpg",
 				"2.jpg",
