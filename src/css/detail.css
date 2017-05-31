@@ -25,6 +25,19 @@ nav {
 .wrap .desc .item .title {
     font-size: 16px;
 }
+.wrap .desc .item .title .price {
+    float: right;
+    font-size: 16px;
+    color: #53b7bd;
+    margin-right: 20px;
+}
+.wrap .desc .item .title .book {
+    float: right;
+    background-color: #ff5f62;
+    border: 1px solid #ff5f62;
+    position: relative;
+    top: -8px;
+}
 
 .wrap .desc .service {
     margin-top: 20px;
@@ -152,7 +165,6 @@ nav {
     border: 1px solid #e5e5e5;
     background-color: #ffffff;
     background: rgba(255, 255, 255, 0.5);
-    color: #53b7bd;
     padding: 14px 20px;
     position: relative;
     text-align: center;
@@ -162,6 +174,7 @@ nav {
 .book-wrap p{
     margin-bottom: 20px;
     font-size: 16px;
+    color: #53b7bd;
 }
 
 .book-wrap button {

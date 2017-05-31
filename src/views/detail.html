@@ -55,6 +55,8 @@
                 <li class="item">
                     <div class="title">
                         <a href="/rooms" class="link-color">舍型展示</a> <span class="content-color"> &gt; 房间详情</span>
+                        <button class="btn btn-danger book visible-sm">立即预定</button>
+                        <p class="price visible-sm">参考价: ￥<%= detail.room.price %></p>
                     </div>
                     <div class="line"></div>
                     <div class="content">
@@ -133,7 +135,7 @@
                 <% }) %>
             </ul>
         </div>
-        <div class="col-md-3 col-md-offset-1">
+        <div class="col-md-3 col-md-offset-1 hidden-sm hidden-xs">
             <div class="book-wrap">
                 <p>参考价: ￥<%= detail.room.price %></p>
                 <button class="btn btn-danger btn-block">立即预定</button>
@@ -146,7 +148,7 @@
         <img src="../img/index/foot_logo.png" alt="">
         <div class="hidden-xs">
             <div class="nestFooterLeft">
-                <p>@Copyright</p>
+                <p>@Copyright 浙ICP备15029129号</p>
             </div>
             <div class="nestFooterRight">
                 <p>地址：浙江省舟山市普陀区东港昌正街170号</p>
@@ -159,22 +161,11 @@
                 <p>电话：0580-3887474</p>
             </div>
             <div class="phoneNestFooterLeft">
-                <p>@Copyright</p>
+                <p>@Copyright 浙ICP备15029129号</p>
             </div>
         </div>
     </div>
 </footer>
-
-
-<!--<div><%= detail.room.name %></div>-->
-<!--<div><%= detail.room.bedType %></div>-->
-<!--<div><%= detail.room.avatar %></div>-->
-<!--<div><%= detail.room.price %></div>-->
-<!--<div><%= detail.room.price %></div>-->
-<!--<div><%= detail.room.additional %></div>-->
-<!--<div><%= detail.room.area %></div>-->
-<!--<div><%= detail.room.floor %></div>-->
-<!--<div><%= detail.room.maxNum %></div>-->
 <script>
     document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
     window.onresize = function () {
