@@ -148,6 +148,27 @@ nav {
     width: 100%
 }
 
+.book-wrap {
+    border: 1px solid #e5e5e5;
+    background-color: #ffffff;
+    background: rgba(255, 255, 255, 0.5);
+    color: #53b7bd;
+    padding: 14px 20px;
+    position: relative;
+    text-align: center;
+    top: -64px;
+}
+
+.book-wrap p{
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.book-wrap button {
+    background-color: #ff5f62;
+    border: 1px solid #ff5f62;
+}
+
 /*
  设定首页小于768px的手机屏幕
  */

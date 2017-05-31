@@ -27,7 +27,8 @@
         </ul>
     </div>
 </header>
-<nav class="row" style="background-image: url('<%= '../img/rooms/big/' + detail.room.id + '/' + detail.room.avatar %>')">
+<nav class="row"
+     style="background-image: url('<%= '../img/rooms/big/' + detail.room.id + '/' + detail.room.avatar %>')">
     <div class="wrap">
         <div class="img-bar">
             <div class="arrow left">
@@ -53,7 +54,7 @@
             <ul class="desc">
                 <li class="item">
                     <div class="title">
-                        <a href="/rooms" class="link-color">舍型展示</a>  <span class="content-color"> &gt; 房间详情</span>
+                        <a href="/rooms" class="link-color">舍型展示</a> <span class="content-color"> &gt; 房间详情</span>
                     </div>
                     <div class="line"></div>
                     <div class="content">
@@ -134,8 +135,8 @@
         </div>
         <div class="col-md-3 col-md-offset-1">
             <div class="book-wrap">
-                <p><%= detail.room.price %></p>
-                <button class="btn btn-danger">立即预定</button>
+                <p>参考价: ￥<%= detail.room.price %></p>
+                <button class="btn btn-danger btn-block">立即预定</button>
             </div>
         </div>
     </div>
