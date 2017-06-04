@@ -12,7 +12,7 @@
     <link rel="bookmark"  type="image/x-icon"  href="../img/index/small_logo.png"/>
     <title>舍型服务</title>
 </head>
-<body>
+<body class="container-fluid">
 <header>
     <div class="navContainer row">
         <div class="col-sm-2 navButton"><a class="header_a_button" href="/">首页</a></div>
@@ -32,7 +32,7 @@
     </div>
 </header>
 
-<nav></nav>
+<nav class="row"></nav>
 <div id="content" class="center">
     <div class="content_part1">
         <h3>会员福利</h3>
@@ -90,6 +90,16 @@
                 $(this).removeClass('glyphicon-remove').addClass('glyphicon-menu-hamburger');
             }
             $("#phoneNav").slideToggle(300);
+        });
+
+        //点击a标签后收回ul
+        $('#phoneNav a').click(function () {
+            $("#phoneNav").slideUp(300);
+            if ($('.navMenu').hasClass('glyphicon-menu-hamburger')) {
+                $('.navMenu').removeClass('glyphicon-menu-hamburger').addClass('glyphicon-remove');
+            } else {
+                $('.navMenu').removeClass('glyphicon-remove').addClass('glyphicon-menu-hamburger');
+            }
         });
         //        logo点击事件
         $("#logo").click(function () {

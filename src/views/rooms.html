@@ -10,7 +10,7 @@
     <link rel="bookmark"  type="image/x-icon"  href="../img/index/small_logo.png"/>
     <title>房型列表</title>
 </head>
-<body>
+<body class="container-fluid">
 <header>
     <div class="navContainer row">
         <div class="col-sm-2 navButton"><a class="header_a_button" href="/">首页</a></div>
@@ -30,10 +30,10 @@
     </div>
 </header>
 
-<nav class="hidden-xs">
+<nav class="hidden-xs row">
     <p>舍型展示</p>
 </nav>
-<div class="visible-xs-block phone_text">
+<div class="visible-xs-block row phone_text">
     <img class="phone_text_img" src="../img/rooms/big/0009/1.jpg" alt="navImg">
     <div class="phone_text_content">
         <p class="phone_text_title">舟山雀舍咖啡城市民居</p><span class="phone_text_point">高档型</span>
@@ -71,10 +71,11 @@
                 </a>
             </div>
             <div class="left_right_img_words">
-                <p class="price"><span>￥<%= rooms[i].price %></span><%= rooms[i].name %>（限量特惠）</p>
+                <!--<span>￥<%= rooms[i].price %></span>-->
+                <p class="price"><%= rooms[i].name %>（限量特惠）</p>
                 <p class="room_info">双早 <%= rooms[i].bedType %> 可住<%= rooms[i].maxNum %>人</p>
                 <p class="button_details"><a href="/detail/<%= rooms[i].id %>">查看详情</a></p>
-                <p class="button">客房预定</p>
+                <p class="button reserve">客房预定</p>
             </div>
         </div>
         <% } %>
@@ -171,11 +172,25 @@
             }
             $("#phoneNav").slideToggle(300);
         });
+        //点击a标签后收回ul
+        $('#phoneNav a').click(function () {
+            $("#phoneNav").slideUp(300);
+            if ($('.navMenu').hasClass('glyphicon-menu-hamburger')) {
+                $('.navMenu').removeClass('glyphicon-menu-hamburger').addClass('glyphicon-remove');
+            } else {
+                $('.navMenu').removeClass('glyphicon-remove').addClass('glyphicon-menu-hamburger');
+            }
+        });
+
         //        logo点击事件
         $("#logo").click(function () {
             location.href = "/"
         });
 
+        //        预定点击事件
+        $(".reserve").click(function () {
+            location.href = "http://hotels.ctrip.com/hotel/6559559.html#ctm_ref=chp_htl_3_n"
+        });
     })
 </script>
 </body>

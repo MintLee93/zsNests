@@ -61,7 +61,7 @@
                     <li class="item">
                         <div class="title hidden-xs">
                             <a href="/rooms" class="link-color">舍型展示</a> <span class="content-color"> &gt; 房间详情</span>
-                            <button class="btn btn-danger book visible-sm">立即预定</button>
+                            <button class="btn btn-danger book visible-sm reserve">立即预定</button>
                             <p class="price visible-sm">参考价: ￥<%= detail.room.price %></p>
                         </div>
                         <div class="line hidden-xs"></div>
@@ -146,7 +146,7 @@
             <div class="col-md-3 col-md-offset-1 hidden-sm hidden-xs">
                 <div class="book-wrap">
                     <p>参考价: ￥<%= detail.room.price %></p>
-                    <button class="btn btn-danger btn-block">立即预定</button>
+                    <button class="reserve btn btn-danger btn-block">立即预定</button>
                 </div>
             </div>
         </div>
@@ -169,7 +169,7 @@
         </div>
     </footer>
 </div>
-<div class="book-fix visible-xs">
+<div class="book-fix visible-xs reserve">
     <button class="btn btn-block btn-danger">立即预定</button>
 </div>
 
@@ -220,9 +220,23 @@
             }
             $("#phoneNav").slideToggle(300);
         });
+
+        //点击a标签后收回ul
+        $('#phoneNav a').click(function () {
+            $("#phoneNav").slideUp(300);
+            if ($('.navMenu').hasClass('glyphicon-menu-hamburger')) {
+                $('.navMenu').removeClass('glyphicon-menu-hamburger').addClass('glyphicon-remove');
+            } else {
+                $('.navMenu').removeClass('glyphicon-remove').addClass('glyphicon-menu-hamburger');
+            }
+        });
         //        logo点击事件
         $("#logo").click(function () {
             location.href = "/"
+        });
+        //        预定点击事件
+        $(".reserve").click(function () {
+            location.href = "http://hotels.ctrip.com/hotel/6559559.html#ctm_ref=chp_htl_3_n"
         });
         $(".banner").click(function () {
             $(".layer-bg").removeClass("hidden")
