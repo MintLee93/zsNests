@@ -6,15 +6,19 @@
         width: 92%;
     }
     body #content h1{
+        text-align: left;
         font-size: 16px;
     }
     body #allmap{
         height: 350px;
     }
+    body nav{
+        background-image: url("../img/services/nav_small.jpg");
+    }
 }
 nav{
     text-align: center;
-    background-image: url("../img/rooms/nav.jpg");
+    background-image: url("../img/services/nav.jpg");
     height: 320px;
     background-size: cover;
     background-repeat: no-repeat;
