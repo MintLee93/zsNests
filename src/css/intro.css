@@ -1,3 +1,35 @@
+/*
+ 设定首页小于768px的手机屏幕
+ */
+@media screen and (max-width: 767px) {
+    body nav{
+          height: 300px;
+    }
+    body  #content{
+        width: 90%;
+    }
+    #content .geography .geography_bottom p {
+        font-size: 16px;
+    }
+    #content .geography .geography_bottom .first_p{
+        margin-top: 22px;
+    }
+
+    #content .geography .geography_bottom .center_p{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    #content .geography .geography_bottom .last_p{
+        margin-bottom: 22px;
+    }
+    #content .left_right_img .traval_text{
+        margin-top: 0;
+
+    }
+
+}
+
 nav{
     text-align: center;
     background-image: url("../img/intro/nav.jpg");
@@ -29,30 +61,31 @@ nav{
     color: #9c9c9c;
     font-size: 14px;
 }
-#content .geography .geography_bottom {
+.geography .geography_bottom {
     width: 100%;
     border: 1px solid #b9b9b9;
     margin-left: auto;
     margin-right: auto;
     text-align: left;
-    padding-left: 60px;
+    padding-left: .4rem;
+    padding-right: .4rem;
 }
 
-#content .geography .geography_bottom p{
+ .geography .geography_bottom p{
     font-size: 18px;
     color: #4a4a4a;
 }
 
-#content .geography .geography_bottom .first_p{
+ .geography .geography_bottom .first_p{
     margin-top: 44px;
 }
 
-#content .geography .geography_bottom .center_p{
+ .geography .geography_bottom .center_p{
     margin-top: 60px;
     margin-bottom: 60px;
 }
 
-#content .geography .geography_bottom .last_p{
+ .geography .geography_bottom .last_p{
     margin-bottom: 44px;
 }
 
@@ -88,10 +121,11 @@ nav{
     width: 100%;
 }
 
-#content .coffee .coffee_details div {
+#content .coffee .coffee_details  {
     /*border: 1px solid;*/
     /*height: 600px;*/
     /*padding: 0;*/
+    margin-top: 40px;
 }
 
 #content .coffee .coffee_details_right li {
@@ -99,8 +133,9 @@ nav{
     margin-top: 20px;
 }
 
-#content .rooms .left_right_img div{
+#content .rooms .left_right_img {
     /*border: 1px solid;*/
+    margin-top: 20px;
 }
 
 #content .rooms .left_right_img  div img{
@@ -127,11 +162,61 @@ nav{
     margin-bottom: 15px;
 }
 
-#content .left_right_img .traval_text{
+.left_right_img .traval_text{
     text-align: left;
     margin-top: 100px;
 }
 
 #content .row .iland_pic img{
     margin-bottom: 20px;
+}
+.font_big_css{
+    text-align: left;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.font_css{
+    color: #6f6f6f;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.ul_style{
+    list-style: none;
+    padding-left: 0;
+}
+.line_long{
+    margin: 0 0 6px 0;
+    width: 45px;
+    height: 1px;
+    background-color: #000000;
+    overflow: hidden;
+    display: inline-block;
+    padding: 0;
+}
+.p_style_left{
+    text-align: left;
+}
+.rooms .css_h2{
+    font-size: 20px;
+    color: #000000;
+
+}
+.rooms .css_h3{
+    font-size: 16px;
+    color: #000000;
+
+}
+.rooms .style_p{
+    font-size: 16px;
+    color: #000000;
+
+}
+.rooms .css_h2_margin{
+    font-size: 20px;
+    color: #000000;
+    margin-top: 20px;
+
+}
+.style_position{
+    position: relative;
 }

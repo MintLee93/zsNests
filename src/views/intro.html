@@ -6,10 +6,12 @@
     <link rel="stylesheet" href="../public/bootstrap.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/intro.css">
+    <link rel="shortcut icon" href="../img/index/logo.png">
+    <link rel="bookmark"  type="image/x-icon"  href="../img/index/logo.png"/>
     <title>雀舍其家</title>
 </head>
 <body>
-<header class="row">
+<header>
     <div class="navContainer row">
         <div class="col-sm-2 navButton"><a class="header_a_button" href="/">首页</a></div>
         <div class="col-sm-2 navButton"><a class="header_a_button fontColor" href="/intro">雀舍其家</a></div>
@@ -28,9 +30,19 @@
     </div>
 </header>
 <nav></nav>
+
+<!--手机屏幕显示导航栏-->
+<div class="row ">
+    <div class="col-xs-3"><a href="">地里优势</a></div>
+    <div class="col-xs-3"><a href="">咖啡文化</a></div>
+    <div class="col-xs-3"><a href="">特色房型</a></div>
+    <div class="col-xs-3"><a href="">旅游周边</a></div>
+</div>
+
+
 <div id="content">
 
-    <div class="geography center">
+    <div id="geography" class="geography center">
         <h1 class="css_h1">地理优势</h1>
         <p class="css_p">Geographical advantage</p>
         <div class="geography_bottom">
@@ -42,7 +54,7 @@
         </div>
     </div>
 
-    <div class="coffee center">
+    <div id="coffee" class="coffee center">
         <h1 class="css_h1">咖啡文化</h1>
         <p class="css_p">Coffee culture</p>
         <img class="coffee_img1" src="../img/intro/coffee.jpg" alt="coffee">
@@ -55,28 +67,31 @@
                 <img src="../img/intro/coffee1.jpg" alt="coffee_desk">
             </div>
             <div class="col-md-6 coffee_details_right">
-                <p>大叔的Coffee Menu</p>
-                <p>-可小憩发呆，可带走所见~请移步到一楼咖啡厅，住宿的舍友有惊喜</p>
-                <ul>
-                    <li>曼特宁
-                        <p>风味：巧克力的香气，糖浆似的口感带中度的果酸，干净的回甘。</p>
+                <p class="font_big_css p_style_left">大叔的Coffee Menu</p>
+                <div class="font_big_css">
+                    <!--<div class="line_long"></div>-->
+                    ——可小憩发呆，可带走所见~请移步到一楼咖啡厅，住宿的舍友有惊喜
+                </div>
+                <ul class="ul_style">
+                    <li class="font_big_css">●曼特宁
+                        <p class="font_css">风味：巧克力的香气，糖浆似的口感带中度的果酸，干净的回甘。</p>
                     </li>
-                    <li>哥伦比亚
-                        <p>风味：甘蔗甜、香草、焦糖、带有柑橘风味的柔和酸质。</p>
+                    <li class="font_big_css">●哥伦比亚
+                        <p class="font_css">风味：甘蔗甜、香草、焦糖、带有柑橘风味的柔和酸质。</p>
                     </li>
-                    <li>巴西
-                        <p>风味：烤花生、核桃、中度柠檬酸，body醇厚，尾段巧克力回甘明显。</p>
+                    <li class="font_big_css">●巴西
+                        <p class="font_css">风味：烤花生、核桃、中度柠檬酸，body醇厚，尾段巧克力回甘明显。</p>
                     </li>
-                    <li>耶加雪咖
-                        <p>风味：柠檬、柑橘、余韵花香</p>
-                        <p>。。。</p>
+                    <li class="font_big_css">●耶加雪咖
+                        <p class="font_css">风味：柠檬、柑橘、余韵花香</p>
+                        <p class="font_css">。。。</p>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <div class="rooms center">
+    <div id="rooms" class="rooms center">
         <h1 class="css_h1">特色房型</h1>
         <p class="css_p">Special room</p>
         <div class="row left_right_img">
@@ -87,113 +102,115 @@
                 <img src="../img/intro/special12.jpg" alt="coffee_desk">
             </div>
         </div>
-        <p>森系亲子房</p>
-        <p>带着宝宝一起出游的家庭，这里有亲子房哦！同时配备了儿童用具和儿童防护措施，布置温馨舒适、创意无限！</p>
+        <p class="css_h2">森系亲子房</p>
+        <p class="style_p">带着宝宝一起出游的家庭，这里有亲子房哦！同时配备了儿童用具和儿童防护措施，布置温馨舒适、创意无限！</p>
         <div class="row left_right_img">
             <div class="col-md-6">
                 <img src="../img/intro/special21.jpg" alt="coffee_desk">
-                <p>欢乐颂</p>
-                <p>为了结伴出游的家庭、情侣或同学，提供组合套房，一房多室，可小聚畅谈、可小试厨艺，给你「家」的入住体验。</p>
+                <p class="css_h2_margin">欢乐颂</p>
+                <p class="style_p p_style_left">为了结伴出游的家庭、情侣或同学，提供组合套房，一房多室，可小聚畅谈、可小试厨艺，给你「家」的入住体验。</p>
             </div>
             <div class="col-md-6">
                 <img src="../img/intro/special22.jpg" alt="coffee_desk">
-                <p>代舍</p>
-                <p>君宿一宵，一间上房</p>
+                <p class="css_h2_margin">代舍</p>
+                <p class="style_p">君宿一宵，一间上房</p>
             </div>
         </div>
         <div class="row left_right_img">
             <div class="col-md-6">
                 <img src="../img/intro/special31.jpg" alt="coffee_desk">
-                <p>眷舍</p>
-                <p>雀舍小住，眷恋不舍</p>
+                <p class="css_h2_margin">眷舍</p>
+                <p class="style_p">雀舍小住，眷恋不舍</p>
             </div>
             <div class="col-md-6">
                 <img src="../img/intro/special32.jpg" alt="coffee_desk">
-                <p>好舍</p>
-                <p>女子为好，花好月圆——专为女子设计的榻榻米房</p>
+                <p class="css_h2_margin">好舍</p>
+                <p class="style_p">女子为好，花好月圆——专为女子设计的榻榻米房</p>
             </div>
         </div>
-        <p class="ellipsis">···</p>
-        <p>56个房间56种风味，欢迎来小舍一聚～</p>
+        <p class="ellipsis css_h2">···</p>
+        <p class="css_h2">56个房间56种风味，欢迎来小舍一聚～</p>
         <div class="row  nine_img">
-            <div class="col-md-4">
+            <div class="col-xs-4 col-md-4">
                 <img src="../img/intro/room11.jpg" alt="lucky_house">
             </div>
-            <div class="col-md-4">
+            <div class="col-xs-4 col-md-4">
                 <img src="../img/intro/room12.jpg" alt="lucky_house">
             </div>
-            <div class="col-md-4">
+            <div class="col-xs-4 col-md-4">
                 <img src="../img/intro/room13.jpg" alt="lucky_house">
             </div>
         </div>
         <div class="row  nine_img">
-            <div class="col-md-4">
+            <div class="col-xs-4 col-md-4">
                 <img src="../img/intro/room21.jpg" alt="lucky_house">
             </div>
-            <div class="col-md-4">
+            <div class="col-xs-4 col-md-4">
                 <img src="../img/intro/room22.jpg" alt="lucky_house">
             </div>
-            <div class="col-md-4">
+            <div class="col-xs-4 col-md-4">
                 <img src="../img/intro/room23.jpg" alt="lucky_house">
             </div>
         </div>
         <div class="row  nine_img">
-            <div class="col-md-4">
+            <div class="col-xs-4 col-md-4">
                 <img src="../img/intro/room31.jpg" alt="lucky_house">
             </div>
-            <div class="col-md-4">
+            <div class="col-xs-4 col-md-4">
                 <img src="../img/intro/room32_1.jpg" alt="lucky_house">
             </div>
-            <div class="col-md-4">
+            <div class="col-xs-4 col-md-4">
                 <img src="../img/intro/room33_1.jpg" alt="lucky_house">
             </div>
         </div>
     </div>
 
-    <div class="rooms center">
+    <div id="travel" class="rooms center">
         <h1 class="css_h1">旅游周边</h1>
         <p class="css_p">Travel around</p>
         <div class="row left_right_img">
-            <div class="col-md-6">
+            <div class="col-xs-6 col-md-6">
                 <img src="../img/intro/traval1.jpg" alt="coffee_desk">
             </div>
-            <div class="col-md-6 traval_text">
-                <p>朝圣礼佛</p>
-                <p>——想到了就来普陀山</p>
-                <p>雀舍与普陀山隔海相望</p>
+            <div class="col-xs-6 col-md-6 style_position">
+                <div class="traval_text">
+                    <p class="css_h2">朝圣礼佛</p>
+                    <p class="css_h2">——想到了就来普陀山</p>
+                    <p class="css_h3">雀舍与普陀山隔海相望</p>
+                </div>
             </div>
         </div>
         <div class="row left_right_img">
-            <div class="col-md-6 traval_text">
-                <p>吃货天堂</p>
-                <p>——十里鲜香，尝尽最地道海鲜</p>
-                <p>雀舍距离沈家门夜排挡5分钟车程</p>
+            <div class="col-xs-6 col-md-6 traval_text">
+                <p class="css_h2">吃货天堂</p>
+                <p class="css_h2">——十里鲜香，尝尽最地道海鲜</p>
+                <p class="css_h3">雀舍距离沈家门夜排挡5分钟车程</p>
             </div>
-            <div class="col-md-6">
+            <div class="col-xs-6 col-md-6">
                 <img src="../img/intro/food1_pc.jpg" alt="coffee_desk">
             </div>
         </div>
         <div class="row left_right_img">
-            <div class="col-md-6">
+            <div class="col-xs-6 col-md-6">
                 <img src="../img/intro/food2_pc.jpg" alt="coffee_desk">
             </div>
-            <div class="col-md-6 traval_text">
-                <p>渔舟唱晚，临岸把酒</p>
-                <p>在咸湿的海风中，</p>
-                <p>来一场虔诚的</p>
-                <p>口腹交流。</p>
+            <div class="col-xs-6 col-md-6 traval_text">
+                <p class="css_h2">渔舟唱晚，临岸把酒</p>
+                <p class="css_h2">在咸湿的海风中，</p>
+                <p class="css_h2">来一场虔诚的</p>
+                <p class="css_h2">口腹交流。</p>
             </div>
         </div>
         <div class="row left_right_img">
-            <div class="col-md-6 iland_pic">
+            <div class="col-xs-6 col-md-6 iland_pic">
                 <img src="../img/intro/iland1.jpg" alt="coffee_desk">
-                <p>海岛自由行</p>
-                <p>东海狂欢，恣意探玩</p>
+                <p class="css_h2_margin">海岛自由行</p>
+                <p class="style_p">东海狂欢，恣意探玩</p>
             </div>
-            <div class="col-md-6 iland_pic">
+            <div class="col-xs-6 col-md-6 iland_pic">
                 <img src="../img/intro/iland2.jpg" alt="coffee_desk">
-                <p>海岛自由行</p>
-                <p>东海狂欢，恣意探玩</p>
+                <p class="css_h2_margin">桃花岛</p>
+                <p class="style_p">金庸先生笔下的“东邪”黄药师就住在这个岛上</p>
             </div>
         </div>
     </div>
