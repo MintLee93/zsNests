@@ -13,28 +13,7 @@ a:hover, a:visited, a:link, a:active {
   text-decoration: none;
 }
 
-/*
- 设定首页小于768px的手机屏幕
- */
-@media screen and (max-width: 767px) {
-  header .navContainer{
-    width: 100%;
-  }
-  .navButton{
-    display: none;
-  }
-  .logo{
-    padding: 0;
-    left: 30px;
-    /* float: left; */
-    position: absolute;
-  }
 
-  footer .nestFooterContainer{
-    position: relative;
-    width: 100%;
-  }
-}
 header{
   height: 60px;
   /*width: 100%;*/
@@ -121,38 +100,36 @@ footer{
   bottom: -24px;
 }
 
-.nestFooterContainer{
+.nest-footer-container{
   height: 98px;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 30px 20px 20px 20px;
 }
 
-footer .nestFooterContainer img{
+footer .nest-footer-container img{
   width: 88px;
   display: inline-block;
-  margin-top: 30px;
-  margin-left: 30px;
+  margin-right: 20px;
+  /*margin-top: 30px;*/
+  /*margin-left: 30px;*/
 }
 
-footer .nestFooterContainer .nestFooterLeft{
-  position: relative;
-  bottom: 21px;
-  margin-left: 80px;
+footer .nest-footer-container .nestFooterLeft{
   display: inline-block;
-  left: 60px;
 }
-footer .nestFooterContainer .nestFooterLeft p{
+footer .nest-footer-container .nestFooterLeft p{
   color: #585858;
 }
-footer .nestFooterContainer .nestFooterRight{
-  position: relative;
+footer .nest-footer-container .nestFooterRight{
   float: right;
-  bottom: 38px;
-  /* margin-top: 20px; */
 }
-footer .nestFooterContainer .nestFooterRight p{
-  color: #ffffff;
+
+footer .nest-footer-container .nestFooterRight p{
+  color: #d9d9d9;
+  text-align: right;
+}
+
+footer .nest-footer-container .nestFooterRight .copy-right {
+  color: #585858;
 }
 
 .nestSeaLeft .phoneFont{
@@ -182,6 +159,60 @@ footer .nestFooterContainer .nestFooterRight p{
   text-align: right;
 }
 
+
 /*
  ------------以上是公共部分css(包含header and footer)-------------
  */
+
+
+/*
+ 设定首页小于768px的手机屏幕
+ */
+@media screen and (max-width: 767px) {
+  header .navContainer{
+    width: 100%;
+  }
+  .navButton{
+    display: none;
+  }
+  .logo{
+    padding: 0;
+    left: 30px;
+    /* float: left; */
+    position: absolute;
+  }
+
+  .nest-footer-container{
+    height: 98px;
+    padding: 30px 20px 20px 20px;
+    font-size: 12px;
+  }
+
+  footer .nest-footer-container img{
+    width: 88px;
+    display: inline-block;
+    margin-right: 20px;
+    /*margin-top: 30px;*/
+    /*margin-left: 30px;*/
+  }
+}
+
+/*
+ 设定首页大于768px的屏幕
+ */
+@media screen and (min-width: 768px) and (max-width: 992px)  {
+
+  .nest-footer-container{
+    height: 98px;
+    padding: 30px 20px 20px 20px;
+    font-size: 12px;
+  }
+
+  footer .nest-footer-container img{
+    width: 88px;
+    display: inline-block;
+    margin-right: 20px;
+    /*margin-top: 30px;*/
+    /*margin-left: 30px;*/
+  }
+}
