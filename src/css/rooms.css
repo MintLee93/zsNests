@@ -41,7 +41,7 @@
 /*
  设定小于861px的手机屏幕
  */
-@media screen and (max-width: 861px) {
+@media screen and (max-width: 912px) {
     .left_right_img_words .button{
         width: 110px;
     }
@@ -84,7 +84,7 @@ nav p{
 
 .center{
     margin-top: 40px;
-    width: 70%;
+    width: 76%;
     margin-right: auto;
     margin-left: auto;
 }
@@ -98,6 +98,7 @@ nav p{
     font-size: .1rem;
     font-weight: 600;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 .button{
@@ -107,10 +108,10 @@ nav p{
     background-color: #ff5f62;
     margin-top: .02rem;
     width: 128px;
-    height: 28px;
+    height: 22px;
     border-radius: 6px;
-    line-height: 28px;
-    font-size: 18px;
+    line-height: 22px;
+    font-size: 16px;
     position: absolute;
     right: 0;
     top: 0;
@@ -136,6 +137,7 @@ nav p{
     bottom: 0;
     color: #5ac6cc;
     cursor: pointer;
+    margin-bottom: 0;
 }
 .phone_text_content{
     margin-top:20px;
