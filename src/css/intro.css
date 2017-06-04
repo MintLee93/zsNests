@@ -23,9 +23,52 @@
     #content .geography .geography_bottom .last_p{
         margin-bottom: 22px;
     }
-    #content .left_right_img .traval_text{
-        margin-top: 0;
+    .rooms .css_h2{
+        font-size: 12px;
+        margin-bottom: 0;
+    }
 
+    .rooms .css_h3{
+        font-size: 12px;
+    }
+    body .rooms .css_h2_margin{
+        font-size: 16px;
+        color: #000000;
+        margin-bottom: 6px;
+        margin-top: 6px;
+    }
+    body .rooms .style_p{
+        font-size: 12px;
+        color: #000000;
+    }
+
+    body #content .coffee .coffee_p2 {
+        margin-top: 10px;
+        font-size: 16px;
+        color: #343434;
+    }
+
+    body .font_big_css{
+        font-size: 16px;
+        margin-top: 6px;
+    }
+
+    #content .rooms .nine_img div{
+        padding: 6px;
+    }
+
+    body #content .rooms .left_right_img{
+        margin-top: 0;
+    }
+
+    body #content .left_right_img .rooms_bottom_img{
+        margin-bottom: 0;
+    }
+    body #content .nine_img{
+        margin-bottom: 0;
+    }
+    body #content .row .iland_pic img{
+        margin-bottom: 0;
     }
 
 }
@@ -191,7 +234,8 @@ nav{
 
 .left_right_img .traval_text{
     text-align: left;
-    margin-top: 100px;
+    position: relative;
+    top: 0.4rem;
 }
 
 #content .row .iland_pic img{
@@ -223,12 +267,13 @@ nav{
 .p_style_left{
     text-align: left;
 }
-.rooms .css_h2{
+
+.css_h2{
     font-size: 20px;
     color: #000000;
 
 }
-.rooms .css_h3{
+ .css_h3{
     font-size: 16px;
     color: #000000;
 
