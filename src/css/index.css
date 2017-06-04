@@ -21,13 +21,13 @@ nav .dataPicker{
     margin: 70px auto 50px auto;
     height: 50px;
     width: 240px;
-    background-color: rgba(225,225,225,0.75);
+    background-color: rgba(0,0,0,0.15);
     /* opacity: 0.75; */
     /*box-shadow: 0 5px 70px #888888;*/
     line-height: 50px;
     font-size: 20px;
     cursor: pointer;
-    color: #2d1405;
+    color: #ffffff;
     border-radius: 50px;
     /* border: 1px solid #ffffff; */
 }
