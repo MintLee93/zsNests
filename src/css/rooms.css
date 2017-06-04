@@ -1,4 +1,18 @@
 /*
+ 设定首页小于320px的超小手机屏幕
+ */
+@media screen and (max-width: 340px) {
+    body .left_right_img_words .button_details{
+        top: 0;
+        margin-top:0;
+        font-size: .36rem;
+    }
+    body .left_right_img_words .price{
+        font-size: .36rem;
+    }
+}
+
+/*
  设定首页小于768px的手机屏幕
  */
 @media screen and (max-width: 768px) {
@@ -7,7 +21,7 @@
         height: 4rem;!important;
     }
     #content{
-        width: 94%;
+        width: 100%;
         margin-top:0;
     }
     .phone_margin{
@@ -19,10 +33,18 @@
     .left_right_img_words .button_details{
         top: 0;
         margin-top:0;
-        font-size: .26rem;
+        font-size: 16px;
     }
     .left_right_img_words .price{
-        font-size: .3rem;
+        font-size: 16px;
+    }
+}
+/*
+ 设定小于861px的手机屏幕
+ */
+@media screen and (max-width: 861px) {
+    .left_right_img_words .button{
+        width: 110px;
     }
 }
 /*

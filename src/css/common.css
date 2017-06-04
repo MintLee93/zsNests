@@ -60,9 +60,11 @@ header div img{
 }
 
 header .phoneNav{
+  left: 0;
+  width: 100%;
   z-index: 6;
   display: none;
-  position: relative;
+  position: absolute;
   background-color: rgba(225, 225, 225, .98);
   padding: 0;
   top: 60px;

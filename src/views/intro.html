@@ -10,7 +10,7 @@
     <link rel="bookmark"  type="image/x-icon"  href="../img/index/small_logo.png"/>
     <title>雀舍其家</title>
 </head>
-<body>
+<body class="container-fluid">
 <header>
     <div class="navContainer row">
         <div class="col-sm-2 navButton"><a class="header_a_button" href="/">首页</a></div>
@@ -29,10 +29,10 @@
         </ul>
     </div>
 </header>
-<nav></nav>
+<nav class="row"></nav>
 
 <!--手机屏幕显示导航栏-->
-<div class="visible-xs-block">
+<div class="row visible-xs-block">
     <div class="row navigation_container">
         <div class="col-xs-3 navigation"><a class="class_a border_bottom" href="#geography">地里优势</a></div>
         <div class="col-xs-3 navigation"><a class="class_a" href="#coffee">咖啡文化</a></div>
@@ -251,6 +251,15 @@
                 $(this).removeClass('glyphicon-remove').addClass('glyphicon-menu-hamburger');
             }
             $("#phoneNav").slideToggle(300);
+        });
+        //点击a标签后收回ul
+        $('#phoneNav a').click(function () {
+            $("#phoneNav").slideUp(300);
+            if ($('.navMenu').hasClass('glyphicon-menu-hamburger')) {
+                $('.navMenu').removeClass('glyphicon-menu-hamburger').addClass('glyphicon-remove');
+            } else {
+                $('.navMenu').removeClass('glyphicon-remove').addClass('glyphicon-menu-hamburger');
+            }
         });
 //        intro导航栏点击事件
         $('.navigation_container a').click(function () {

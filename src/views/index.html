@@ -31,7 +31,7 @@
 </header>
 <nav class="row">
     <div class="navImg"></div>
-    <div class="dataPicker">
+    <div class="dataPicker reserve">
         客房预定
     </div>
 </nav>
@@ -179,9 +179,22 @@
             }
             $("#phoneNav").slideToggle(300);
         });
+        //点击a标签后收回ul
+        $('#phoneNav a').click(function () {
+            $("#phoneNav").slideUp(300);
+            if ($('.navMenu').hasClass('glyphicon-menu-hamburger')) {
+                $('.navMenu').removeClass('glyphicon-menu-hamburger').addClass('glyphicon-remove');
+            } else {
+                $('.navMenu').removeClass('glyphicon-remove').addClass('glyphicon-menu-hamburger');
+            }
+        });
         //        logo点击事件
         $("#logo").click(function () {
             location.href = "/"
+        });
+        //        预定点击事件
+        $(".reserve").click(function () {
+            location.href = "http://hotels.ctrip.com/hotel/6559559.html#ctm_ref=chp_htl_3_n"
         });
 
     })
