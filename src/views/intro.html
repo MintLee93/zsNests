@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="../public/bootstrap.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/intro.css">
-    <link rel="shortcut icon" href="../img/index/logo.png">
-    <link rel="bookmark"  type="image/x-icon"  href="../img/index/logo.png"/>
+    <link rel="shortcut icon" href="../img/index/small_logo.png">
+    <link rel="bookmark"  type="image/x-icon"  href="../img/index/small_logo.png"/>
     <title>雀舍其家</title>
 </head>
 <body>
@@ -267,20 +267,11 @@
             }
 
         });
+//        logo点击事件
+        $("#logo").click(function () {
+            location.href = "/"
+        })
     });
-    self.toTop = function(){
-        var windowHeight = document.documentElement.scrollHeight;
-        var everyY = windowHeight / 140 ;
-        var scrollWin = function() {
-            windowHeight = windowHeight - everyY;
-            window.scrollTo(0, windowHeight);
-            if(windowHeight <= 0){
-                self.clearInterval(timer2);
-            }
-            console.log(windowHeight);
-        };
-        var timer2 = self.setInterval(scrollWin, 1);
-    };
 </script>
 </body>
 </html>

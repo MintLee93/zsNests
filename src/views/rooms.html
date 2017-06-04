@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="../public/bootstrap.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/rooms.css">
+    <link rel="shortcut icon" href="../img/index/small_logo.png">
+    <link rel="bookmark"  type="image/x-icon"  href="../img/index/small_logo.png"/>
     <title>房型列表</title>
 </head>
 <body>
@@ -176,9 +178,10 @@
             }
             $("#phoneNav").slideToggle(300);
         });
-//        $('.carousel').carousel({
-//            interval: 0
-//        });
+        //        logo点击事件
+        $("#logo").click(function () {
+            location.href = "/"
+        });
 
     })
 </script>

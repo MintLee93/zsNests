@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="../public/bootstrap.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/detail.css">
+    <link rel="shortcut icon" href="../img/index/small_logo.png">
+    <link rel="bookmark"  type="image/x-icon"  href="../img/index/small_logo.png"/>
     <title><%= detail.room.name %></title>
 </head>
 <body>
@@ -224,12 +226,16 @@
             }
             $("#phoneNav").slideToggle(300);
         });
+        //        logo点击事件
+        $("#logo").click(function () {
+            location.href = "/"
+        });
         $(".banner").click(function () {
             $(".layer-bg").removeClass("hidden")
         });
         $(".remove-icon").click(function () {
             $(".layer-bg").addClass("hidden")
-        })
+        });
     })
 </script>
 </body>
