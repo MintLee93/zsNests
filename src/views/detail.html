@@ -9,6 +9,7 @@
     <title><%= detail.room.name %></title>
 </head>
 <body class="container-fluid">
+
 <header class="row">
     <div class="navContainer row">
         <div class="col-sm-2 navButton"><a class="header_a_button" href="/">首页</a></div>
@@ -27,7 +28,8 @@
         </ul>
     </div>
 </header>
-<nav class="row" style="background-image: url('<%= '../img/rooms/big/' + detail.room.id + '/' + detail.room.avatar %>')">
+<nav class="row banner"
+     style="background-image: url('<%= '../img/rooms/big/' + detail.room.id + '/' + detail.room.avatar %>')">
     <div class="wrap">
         <div class="img-bar">
             <div class="arrow left">
@@ -53,7 +55,9 @@
             <ul class="desc">
                 <li class="item">
                     <div class="title">
-                        <a href="/rooms" class="link-color">舍型展示</a>  <span class="content-color"> &gt; 房间详情</span>
+                        <a href="/rooms" class="link-color">舍型展示</a> <span class="content-color"> &gt; 房间详情</span>
+                        <button class="btn btn-danger book visible-sm">立即预定</button>
+                        <p class="price visible-sm">参考价: ￥<%= detail.room.price %></p>
                     </div>
                     <div class="line"></div>
                     <div class="content">
@@ -62,42 +66,57 @@
                         </h3>
                         <ul class="service">
                             <li>
+                                <img class="icon" src="../img/detail/people.png" alt="最多入住">
+                                <p>
+                                    最多入住
+                                    <span><%= detail.room.maxNum %></span>
+                                    人
+                                </p>
+                            </li>
+                            <li>
+                                <img class="icon" src="../img/detail/area.png" alt="面积">
+                                <p>
+                                    面积
+                                    <span><%= detail.room.area %></span>
+                                    m2
+                                </p>
+                            </li>
+                            <li>
+                                <img class="icon" src="../img/detail/floor.png" alt="楼层">
+                                <p>
+                                    楼层
+                                    <span><%= detail.room.floor %></span>
+                                    F
+                                </p>
+                            </li>
+                            <li class="right">
+                                <img class="icon" src="../img/detail/bed.png" alt="床型">
+                                <p>
+                                    <span><%= detail.room.bedType %></span>
+                                    <% if (detail.room.additional) { %>
+                                    <span>(可加床)</span>
+                                    <% } %>
+                                </p>
+                            </li>
+                        </ul>
+                        <ul class="service second">
+                            <li>
                                 <img class="icon" src="../img/detail/breakfast.png" alt="双早">
                                 <p>双早</p>
                             </li>
                             <li>
-                                <img class="icon" src="../img/detail/breakfast.png" alt="双早">
-                                <p>面积</p>
-                            </li>
-                            <li>
-                                <img class="icon" src="../img/detail/breakfast.png" alt="双早">
-                                <p>楼层</p>
-                            </li>
-                            <li class="right">
-                                <img class="icon" src="../img/detail/wifi.png" alt="双早">
+                                <img class="icon" src="../img/detail/wifi.png" alt="WIFI">
                                 <p>wifi</p>
                             </li>
-                        </ul>
-                        <ul class="service">
-                            <li>
-                                <img class="icon" src="../img/detail/wifi.png" alt="双早">
-                                <p>wifi</p>
-                            </li>
-                            <li>
-                                <img class="icon" src="../img/detail/bed.png" alt="双早">
-                                <p>床型
-                                    <% if (detail.room.additional) { %>
-                                     <span>(可加床)</span>
-                                    <% } %>
-                                </p>
-                            </li>
+
                             <li>
                                 <img class="icon" src="../img/detail/smoke.png" alt="双早">
                                 <p>无烟房</p>
                             </li>
+
                             <li class="right">
-                                <img class="icon" src="../img/detail/breakfast.png" alt="双早">
-                                <p>最多入住</p>
+                                <img class="icon" src="../img/detail/airClean.png" alt="净化器">
+                                <p>空气净化器</p>
                             </li>
                         </ul>
                     </div>
@@ -117,8 +136,11 @@
                 <% }) %>
             </ul>
         </div>
-        <div class="col-md-3 col-md-offset-1">
-            <button class="btn btn-danger">立即预定</button>
+        <div class="col-md-3 col-md-offset-1 hidden-sm hidden-xs">
+            <div class="book-wrap">
+                <p>参考价: ￥<%= detail.room.price %></p>
+                <button class="btn btn-danger btn-block">立即预定</button>
+            </div>
         </div>
     </div>
 </div>
@@ -127,7 +149,7 @@
         <img src="../img/index/foot_logo.png" alt="">
         <div class="hidden-xs">
             <div class="nestFooterLeft">
-                <p>@Copyright</p>
+                <p>@Copyright 浙ICP备15029129号</p>
             </div>
             <div class="nestFooterRight">
                 <p>地址：浙江省舟山市普陀区东港昌正街170号</p>
@@ -140,22 +162,38 @@
                 <p>电话：0580-3887474</p>
             </div>
             <div class="phoneNestFooterLeft">
-                <p>@Copyright</p>
+                <p>@Copyright 浙ICP备15029129号</p>
             </div>
         </div>
     </div>
 </footer>
 
+<div class="layer-bg">
+    <div id="carousel" data-interval="false" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+            <% detail.room.images.forEach(function(item){ %>
+            <% if ( item == detail.room.avatar) { %>
+            <div class="item active">
+                <img class="bg-img" src="<%= '../img/rooms/big/' + detail.room.id + '/' + item %>" alt="">
+            </div>
+            <% } else { %>
+            <div class="item">
+                <img class="bg-img" src="<%= '../img/rooms/big/' + detail.room.id + '/' + item %>" alt="">
+            </div>
+            <% } %>
+            <% }) %>
+        </div>
+        <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
 
-<!--<div><%= detail.room.name %></div>-->
-<!--<div><%= detail.room.bedType %></div>-->
-<!--<div><%= detail.room.avatar %></div>-->
-<!--<div><%= detail.room.price %></div>-->
-<!--<div><%= detail.room.price %></div>-->
-<!--<div><%= detail.room.additional %></div>-->
-<!--<div><%= detail.room.area %></div>-->
-<!--<div><%= detail.room.floor %></div>-->
-<!--<div><%= detail.room.maxNum %></div>-->
 <script>
     document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
     window.onresize = function () {
@@ -173,6 +211,9 @@
                 $(this).removeClass('glyphicon-remove').addClass('glyphicon-menu-hamburger');
             }
             $("#phoneNav").slideToggle(300);
+        });
+        $(".banner").click(function () {
+            alert("hahah")
         })
 
     })
