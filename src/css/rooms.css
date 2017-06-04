@@ -2,8 +2,12 @@
  设定首页小于768px的手机屏幕
  */
 @media screen and (max-width: 768px) {
+    .img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img{
+        width: 100%;
+        height: 4rem;!important;
+    }
     #content{
-        width: 90%;
+        width: 94%;
         margin-top:0;
     }
     .phone_margin{
@@ -21,11 +25,34 @@
         font-size: .3rem;
     }
 }
-
-header .phoneNav{
-    z-index: 2;
+/*
+ 设定首页大于768px的手机屏幕
+ */
+@media screen and (min-width: 768px)  {
+    .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img{
+        height: 1.8rem;
+        width: 100%;
+    }
 }
+#content .row{
+    margin-left: 0;
+    margin-right: 0;
+}
+/*.carousel{*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*margin: auto;*/
+/*}*/
+/*.carousel .carousel-inner .item {*/
+    /*min-width:500px;*/
+    /*!*max-height:500px;*!*/
+    /*min-height:500px;*/
 
+    /*overflow: hidden;*/
+/*}*/
 nav{
     text-align: center;
     background-image: url("../img/rooms/nav.jpg");

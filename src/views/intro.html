@@ -32,12 +32,15 @@
 <nav></nav>
 
 <!--手机屏幕显示导航栏-->
-<div class="row ">
-    <div class="col-xs-3"><a href="">地里优势</a></div>
-    <div class="col-xs-3"><a href="">咖啡文化</a></div>
-    <div class="col-xs-3"><a href="">特色房型</a></div>
-    <div class="col-xs-3"><a href="">旅游周边</a></div>
+<div class="visible-xs-block">
+    <div class="row navigation_container">
+        <div class="col-xs-3 navigation"><a class="class_a border_bottom" href="#geography">地里优势</a></div>
+        <div class="col-xs-3 navigation"><a class="class_a" href="#coffee">咖啡文化</a></div>
+        <div class="col-xs-3 navigation"><a class="class_a" href="#rooms">特色房型</a></div>
+        <div class="col-xs-3 navigation"><a class="class_a" href="#travel">旅游周边</a></div>
+    </div>
 </div>
+
 
 
 <div id="content">
@@ -230,7 +233,6 @@
         </div>
         <div class="visible-xs-block  phoneNestFooter">
             <div class="phoneNestFooterRight">
-                <p>地址：浙江省舟山市普陀区东港昌正街170号</p>
                 <p>电话：0580-3887474</p>
             </div>
             <div class="phoneNestFooterLeft">
@@ -257,9 +259,29 @@
                 $(this).removeClass('glyphicon-remove').addClass('glyphicon-menu-hamburger');
             }
             $("#phoneNav").slideToggle(300);
-        })
+        });
+//        intro导航栏点击事件
+        $('.navigation_container a').click(function () {
+            if(!$(this).hasClass('border_bottom')){
+                $(".class_a").removeClass('border_bottom');
+                $(this).addClass('border_bottom');
+            }
 
-    })
+        });
+    });
+    self.toTop = function(){
+        var windowHeight = document.documentElement.scrollHeight;
+        var everyY = windowHeight / 140 ;
+        var scrollWin = function() {
+            windowHeight = windowHeight - everyY;
+            window.scrollTo(0, windowHeight);
+            if(windowHeight <= 0){
+                self.clearInterval(timer2);
+            }
+            console.log(windowHeight);
+        };
+        var timer2 = self.setInterval(scrollWin, 1);
+    };
 </script>
 </body>
 </html>

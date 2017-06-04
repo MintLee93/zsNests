@@ -3,7 +3,13 @@
  */
 @media screen and (max-width: 768px) {
     #content{
-        width: 100%;
+        width: 92%;
+    }
+    body #content h1{
+        font-size: 16px;
+    }
+    body #allmap{
+        height: 350px;
     }
 }
 nav{
@@ -12,7 +18,7 @@ nav{
     height: 320px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: -96px;
+    /*background-position-y: -96px;*/
 }
 
 .center{
