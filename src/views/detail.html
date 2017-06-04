@@ -9,6 +9,7 @@
     <title><%= detail.room.name %></title>
 </head>
 <body class="container-fluid">
+
 <header class="row">
     <div class="navContainer row">
         <div class="col-sm-2 navButton"><a class="header_a_button" href="/">首页</a></div>
@@ -27,7 +28,7 @@
         </ul>
     </div>
 </header>
-<nav class="row"
+<nav class="row banner"
      style="background-image: url('<%= '../img/rooms/big/' + detail.room.id + '/' + detail.room.avatar %>')">
     <div class="wrap">
         <div class="img-bar">
@@ -166,6 +167,33 @@
         </div>
     </div>
 </footer>
+
+<div class="layer-bg">
+    <div id="carousel" data-interval="false" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+            <% detail.room.images.forEach(function(item){ %>
+            <% if ( item == detail.room.avatar) { %>
+            <div class="item active">
+                <img class="bg-img" src="<%= '../img/rooms/big/' + detail.room.id + '/' + item %>" alt="">
+            </div>
+            <% } else { %>
+            <div class="item">
+                <img class="bg-img" src="<%= '../img/rooms/big/' + detail.room.id + '/' + item %>" alt="">
+            </div>
+            <% } %>
+            <% }) %>
+        </div>
+        <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
 <script>
     document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
     window.onresize = function () {
@@ -183,6 +211,9 @@
                 $(this).removeClass('glyphicon-remove').addClass('glyphicon-menu-hamburger');
             }
             $("#phoneNav").slideToggle(300);
+        });
+        $(".banner").click(function () {
+            alert("hahah")
         })
 
     })
