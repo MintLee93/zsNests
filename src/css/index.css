@@ -1,6 +1,6 @@
 nav{
     text-align: center;
-    background-image: url("../img/index/nav_bg.jpg");
+    background-image: url("../img/rooms/big/0003/5.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -229,6 +229,9 @@ nav .dataPicker{
  设定首页小于768px的手机屏幕
  */
 @media screen and (max-width: 767px) {
+    nav{
+        background-image: url("../img/rooms/big/0004/8.jpg");
+    }
 
     .content .wrap{
         padding-top: 36px;

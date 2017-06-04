@@ -13,14 +13,16 @@
         height: 350px;
     }
     body nav{
-        background-image: url("../img/services/nav_small.jpg");
+        background-image: url("../img/rooms/big/0003/7.jpg");
+        background-position-y: 50%;
     }
 }
 nav{
     text-align: center;
-    background-image: url("../img/services/nav.jpg");
+    background-image: url("../img/index/nav_bg.jpg");
     height: 320px;
     background-size: cover;
+    background-position-y: 92%;
     background-repeat: no-repeat;
 }
 
