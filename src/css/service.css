@@ -5,7 +5,7 @@
     #content{
         width: 92%;
     }
-    body #content h1{
+    body #content h3{
         font-size: 16px;
     }
     body #allmap{
@@ -28,15 +28,16 @@ nav{
     text-align: center;
 }
 
-#content h1{
+#content h3{
     color: #78c7cd;
-    font-size: 32px;
 }
 
 #content .font_content{
     border-top: 1px solid #dbdbdb;
     text-align: left;
     margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #allmap{
