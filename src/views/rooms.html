@@ -34,7 +34,7 @@
     <p>舍型展示</p>
 </nav>
 <div class="visible-xs-block row phone_text">
-    <img class="phone_text_img" src="../img/rooms/big/0009/1.jpg" alt="navImg">
+    <img class="phone_text_img lazy" data-original="../img/rooms/big/0009/1.jpg" alt="navImg">
     <div class="phone_text_content">
         <p class="phone_text_title">舟山雀舍咖啡城市民居</p><span class="phone_text_point">高档型</span>
         <p class="phone_text_other">2017年开业</p>
@@ -51,11 +51,11 @@
                     <% for(var j=0; j<rooms[i].images.length; j++) {%>
                     <% if (rooms[i].images[j] == rooms[i].avatar) { %>
                     <div class="item active">
-                        <img class="img_height" src="<%= '../img/rooms/small/' + rooms[i].id + '/' + rooms[i].images[j] %>" alt="forest_twin_room">
+                        <img class="img_height lazy" data-original="<%= '../img/rooms/small/' + rooms[i].id + '/' + rooms[i].images[j] %>" alt="forest_twin_room">
                     </div>
                     <% } else { %>
                     <div class="item">
-                        <img src="<%= '../img/rooms/small/' + rooms[i].id + '/' + rooms[i].images[j] %>" alt="forest_twin_room">
+                        <img class="lazy" data-original="<%= '../img/rooms/small/' + rooms[i].id + '/' + rooms[i].images[j] %>" alt="forest_twin_room">
                     </div>
                     <% } %>
 
@@ -140,7 +140,7 @@
 <footer class="row">
     <div class="nest-footer-container">
         <div class="col-sm-6 col-xs-4">
-            <img src="../img/index/foot_logo.png" alt="">
+            <img class="lazy" data-original="../img/index/foot_logo.png" alt="">
             <div class="nestFooterLeft hidden-xs">
                 <p class="copy-right">@Copyright 浙ICP备15029129号</p>
             </div>
@@ -161,6 +161,7 @@
     }
 </script>
 <script src="http://cdn.bootcss.com/jquery/3.2.0/jquery.min.js"></script>
+<script src="public/jquery.lazyload.min.js"></script>
 <script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script>
     $(document).ready(function () {
@@ -191,6 +192,12 @@
         //        预定点击事件
         $(".reserve").click(function () {
             location.href = "http://hotels.ctrip.com/hotel/6559559.html#ctm_ref=chp_htl_3_n"
+        });
+
+        //懒加载
+        $("img.lazy").lazyload({
+            effect : "fadeIn",
+            threshold : 200
         });
     })
 </script>

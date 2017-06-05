@@ -54,7 +54,7 @@
             </div>
         </div>
         <div class="nestOutsideImg">
-            <img class="nestOutsideImg" src="./img/rooms/big/0001/2.jpg" alt="nestOutsideImg">
+            <img class="nestOutsideImg lazy" data-original="./img/rooms/big/0001/2.jpg" alt="nestOutsideImg">
             <div class="nestOutsideBottom"></div>
         </div>
     </div>
@@ -71,7 +71,7 @@
             <p class="nestSeaP">假如有背包客、行脚僧有缘来此，这里有咖啡、有轻食，你留下故事的种子，我们来镌刻下你自由行走的花。</p>
         </div>
         <div class="col-md-6 nestSeaRight">
-            <img class="nestSeaRightImg" src="./img/rooms/small/0002/1.jpg" alt="">
+            <img class="nestSeaRightImg lazy" data-original="./img/rooms/small/0002/1.jpg" alt="">
         </div>
     </div>
 
@@ -85,7 +85,7 @@
             <p class="nestSeaP">假如有背包客、行脚僧有缘来此，这里有咖啡、有轻食，你留下故事的种子，我们来镌刻下你自由行走的花。</p>
         </div>
         <div class="col-md-6 nestSeaRight">
-            <img class="nestSeaRightImg" src="./img/rooms/small/0002/13.jpg" alt="">
+            <img class="nestSeaRightImg lazy" data-original="./img/rooms/small/0002/13.jpg" alt="">
         </div>
     </div>
 
@@ -100,7 +100,7 @@
             <p class="nestSeaP phoneFont">服务上——成熟的酒店管理团队让自由与规范和谐统一；</p>
         </div>
         <div class="col-md-6 nestSeaRight">
-            <img class="nestSeaRightImg" src="./img/rooms/small/0007/3.jpg" alt="">
+            <img class="nestSeaRightImg lazy" data-original="./img/rooms/small/0007/3.jpg" alt="">
         </div>
     </div>
 
@@ -126,14 +126,14 @@
             <p class="nestSeaP">交通便利，距离普陀山机场、朱家尖蜈蚣峙码头、沈家门半升洞码头、普陀客运中心均在十分钟车程内。</p>
         </div>
         <div class="col-md-6 nestSeaRight">
-            <img class="nestSeaRightImg" src="./img/rooms/small/0003/5.jpg" alt="">
+            <img class="nestSeaRightImg lazy" data-original="./img/rooms/small/0003/5.jpg" alt="">
         </div>
     </div>
     <!--part3:屏幕小于768隐藏该div-->
 
     <div class="hidden-xs row wrap nestTourism">
         <div class="col-md-6 nestTourismRight">
-            <img src="./img/rooms/small/0004/1.jpg" alt="">
+            <img class="lazy" data-original="./img/rooms/small/0004/1.jpg" alt="">
         </div>
         <div class="col-md-6 nestTourismLeft">
             <h1 class="nestTourismLeftH1">『雀舍咖啡城市民居』</h1>
@@ -147,7 +147,7 @@
 <footer class="row">
     <div class="nest-footer-container">
         <div class="col-sm-6 col-xs-4">
-            <img src="./img/index/foot_logo.png" alt="">
+            <img class="lazy" data-original="./img/index/foot_logo.png" alt="">
             <div class="nestFooterLeft hidden-xs">
                 <p class="copy-right">@Copyright 浙ICP备15029129号</p>
             </div>
@@ -168,6 +168,7 @@
     }
 </script>
 <script src="http://cdn.bootcss.com/jquery/3.2.0/jquery.min.js"></script>
+<script src="../public/jquery.lazyload.min.js"></script>
 <script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script>
     $(document).ready(function () {
@@ -198,6 +199,11 @@
             location.href = "http://hotels.ctrip.com/hotel/6559559.html#ctm_ref=chp_htl_3_n"
         });
 
+        //懒加载
+        $("img.lazy").lazyload({
+            effect : "fadeIn",
+            threshold : 200
+        });
     })
 </script>
 </body>
