@@ -14,3 +14,5 @@
 node_modules
 Generated_files.xml
 .module-cache
+tsconfig.json
+aaa.json
