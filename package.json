@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "cheerio": "^0.22.0",
+    "compression": "^1.6.2",
     "superagent": "^3.5.2"
   }
 }
