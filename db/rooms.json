@@ -9,6 +9,8 @@
 			"additional": false,
 			"area": 35,
 			"floor": "2-4",
+			"num": "6",
+			"detail": "森系小清新的背景，两张1.2米标准床，电动窗帘，电视机可摆臂斜摇",
 			"images": [
 				"1.jpg",
 				"2.jpg",
@@ -22,13 +24,15 @@
 		},
 		{
 			"id": "0002",
-			"name": "雀舍大床房",
+			"name": "森系大床房",
 			"bedType": "大床",
 			"avatar": "1.jpg",
 			"price": "680",
 			"additional": false,
 			"area": 35,
 			"floor": "2-4",
+			"num": "6",
+			"detail": "绿枝，小灯，红砖青墙，1.8米大床，电动窗帘，电视机可摆臂斜摇",
 			"images": [
 				"1.jpg",
 				"2.jpg",
@@ -56,6 +60,8 @@
 			"additional": false,
 			"area": 35,
 			"floor": "2-4",
+			"num": "12",
+			"detail": "两张1.2米标准床，手工马赛克书桌，印有雀的窗帘，雀的床头灯，雀的咖啡杯",
 			"images": [
 				"1.jpg",
 				"2.jpg",
@@ -86,7 +92,9 @@
 			"price": "680",
 			"additional": false,
 			"area": 35,
+			"detail": "森系大床房里添加了一张适合3-16岁的特色儿童床，配有滑梯、木马",
 			"floor": "2-4",
+			"num": "6",
 			"images": [
 				"1.jpg",
 				"2.jpg",
@@ -113,6 +121,8 @@
 			"additional": false,
 			"area": 35,
 			"floor": "2-4",
+			"num": "2",
+			"detail": "两张1.2米标准床，一张品咖长桌，手工拗凿的纯铜洗脸盆",
 			"images": [
 				"1.jpg",
 				"2.jpg",
@@ -133,6 +143,8 @@
 			"additional": false,
 			"area": 35,
 			"floor": "2-4",
+			"num": "3",
+			"detail": "蓝调漆墙，原木弧形浴室，干湿分离，磨砂浴缸靠窗，1.8米大床",
 			"images": [
 				"1.jpg",
 				"2.jpg",
@@ -156,6 +168,8 @@
 			"additional": false,
 			"area": 35,
 			"floor": "2-4",
+			"num": "3",
+			"detail": "1.8米大床，特色木桶，翠碧简约，外间有可以品茗、喝咖、棋牌的休闲客厅",
 			"images": [
 				"1.jpg",
 				"2.jpg",
@@ -179,6 +193,8 @@
 			"additional": false,
 			"area": 35,
 			"floor": "2-4",
+			"num": "3",
+			"detail": "一个大客厅，配有2个房间，适合几个家庭、多对情侣、同学等集体入住",
 			"images": [
 				"1.jpg",
 				"2.jpg",
@@ -201,6 +217,8 @@
 			"additional": false,
 			"area": 35,
 			"floor": "2-4",
+			"num": "3",
+			"detail": "一个大客厅，配有3个房间，适合几个家庭、多对情侣、同学等集体入住",
 			"images": [
 				"1.jpg",
 				"2.jpg",

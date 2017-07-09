@@ -69,6 +69,9 @@
                             <!--<p class="price visible-xs">￥<%= detail.room.price %></p>-->
                             <h3>
                                 <%= detail.room.name %>
+                                <% if (detail.room.num) { %>
+                                <span class="number">(<%= detail.room.num %>间)</span>
+                                <% } %>
                             </h3>
                             <p class="address visible-xs">浙江省舟山市普陀区东港昌正街170号</p>
                             <ul class="service">
@@ -129,6 +132,20 @@
                         </div>
                     </li>
                 </ul>
+                <% if (detail.room.detail) { %>
+                <ul class="intro">
+                    <li class="item">
+                        <div class="title link-color">
+                            特色
+                        </div>
+                        <div class="line"></div>
+                        <div class="content content-color">
+                            <%= detail.room.detail %>
+                        </div>
+                    </li>
+                </ul>
+                <% } %>
+
                 <ul class="intro">
                     <% detail.intro.forEach(function(item){ %>
                     <li class="item">

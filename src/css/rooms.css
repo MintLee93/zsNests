@@ -25,6 +25,7 @@
     }
     .phone_margin{
         margin-top:20px;
+        margin-bottom:10px;
     }
     .left_right_img_words .button{
         position: relative;
@@ -93,11 +94,19 @@ nav p{
     position: relative;
 }
 
+.phone_margin{
+    padding-bottom: 20px;
+}
+
+.number {
+    font-size: 14px;
+}
+
 .price{
     color: #5ac6cc;
-    font-size: .1rem;
+    font-size: 16px;
     font-weight: 600;
-    margin-top: 10px;
+    margin-top: 14px;
     cursor: pointer;
 }
 
@@ -106,22 +115,28 @@ nav p{
     color: #ffffff;
     text-align: center;
     background-color: #ff5f62;
+    border-color: #ff5f62;
     margin-top: .02rem;
     width: 128px;
     /* height: 22px; */
-    border-radius: 4px;
+    border-radius: 2px;
     line-height: 10px;
-    font-size: 16px;
+    font-size: 14px;
     position: absolute;
     right: 0;
-    top: 0;
+    top: -6px;
     cursor: pointer;
+    padding: 8px;
 }
 
 #content .left_right_img_words .room_info{
-    margin-top: 10px;
+    margin-top: 16px;
     font-size: 14px;
-    font-weight: bold;
+    color: #777777;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-height: 20px;
 }
 
 #content .left_right_img_words .room_reserve{
@@ -130,12 +145,15 @@ nav p{
 }
 
 .button_details{
-    margin-top: 10px;
     font-size: 16px;
+    padding: 10px;
     position: absolute;
-    right: 0;
-    bottom: 0;
-    color: #5ac6cc;
+    right: 10px;
+    bottom: 10px;
+    color: #ffffff;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
     cursor: pointer;
     margin-bottom: 0;
 }
