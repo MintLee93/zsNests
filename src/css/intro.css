@@ -119,6 +119,12 @@ nav{
     text-align: center;
 }
 
+
+#content .part{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .geography .geography_bottom {
     width: 100%;
     border: 1px solid #b9b9b9;
@@ -139,8 +145,7 @@ nav{
 }
 
  .geography .geography_bottom .center_p{
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
  .geography .geography_bottom .last_p{
@@ -152,8 +157,16 @@ nav{
     font-size: 14px;
 }
 
+.image-block{
+    margin: 10px;
+}
+
 #content .coffee .coffee_img1{
     width: 100%;
+}
+
+#content .coffee .internal{
+    margin-top: 40px;
 }
 
 #content .coffee .coffee_div{
@@ -162,7 +175,7 @@ nav{
 }
 
 #content .coffee .coffee_p2 {
-    margin-top: 20px;
+    margin-top: 40px;
     font-size: 20px;
     color: #343434;
 }
@@ -185,6 +198,15 @@ nav{
 
 #content .rooms .left_right_img  div img{
     width: 98%;
+}
+
+#content .rooms .left_right_img  div .sub-img{
+    width: 98%;
+    max-height: 168px;
+}
+
+.sub-intro {
+    margin-top: 26px;
 }
 
 #content .rooms .nine_img div{
