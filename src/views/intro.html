@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width，initial-scale=1，maximum-scale=1，user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/intro.css">
@@ -195,6 +195,7 @@
 
     </div>
 </div>
+
 <footer class="row">
     <div class="nest-footer-container">
         <div class="col-sm-6 col-xs-4">
@@ -214,7 +215,7 @@
 </footer>
 <script>
     document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
-    window.onresize=function () {
+    window.onresize = function () {
         document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
     }
 </script>
@@ -224,9 +225,9 @@
 <script>
     $(document).ready(function () {
         $('.navMenu').click(function () {
-            if($(this).hasClass('glyphicon-menu-hamburger')){
+            if ($(this).hasClass('glyphicon-menu-hamburger')) {
                 $(this).removeClass('glyphicon-menu-hamburger').addClass('glyphicon-remove');
-            }else {
+            } else {
                 $(this).removeClass('glyphicon-remove').addClass('glyphicon-menu-hamburger');
             }
             $("#phoneNav").slideToggle(300);
@@ -242,7 +243,7 @@
         });
 //        intro导航栏点击事件
         $('.navigation_container a').click(function () {
-            if(!$(this).hasClass('border_bottom')){
+            if (!$(this).hasClass('border_bottom')) {
                 $(".class_a").removeClass('border_bottom');
                 $(this).addClass('border_bottom');
             }
@@ -255,8 +256,8 @@
 
         //懒加载
         $("img.lazy").lazyload({
-            effect : "fadeIn",
-            threshold : 200
+            effect: "fadeIn",
+            threshold: 200
         });
     });
 </script>
