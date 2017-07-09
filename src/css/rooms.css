@@ -1,61 +1,3 @@
-/*
- 设定首页小于320px的超小手机屏幕
- */
-@media screen and (max-width: 340px) {
-    body .left_right_img_words .button_details{
-        top: 0;
-        margin-top:0;
-        font-size: .36rem;
-    }
-    body .left_right_img_words .price{
-        font-size: .36rem;
-    }
-}
-/*
- 设定首页小于768px的手机屏幕
- */
-@media screen and (max-width: 768px) {
-    .img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img{
-        width: 100%;
-        height: 4rem;!important;
-    }
-    #content{
-        width: 100%;
-        margin-top:0;
-    }
-    .phone_margin{
-        margin-top:20px;
-        margin-bottom:10px;
-    }
-    .left_right_img_words .button{
-        position: relative;
-    }
-    .left_right_img_words .button_details{
-        top: 0;
-        margin-top:0;
-        font-size: 16px;
-    }
-    .left_right_img_words .price{
-        font-size: 16px;
-    }
-}
-/*
- 设定小于861px的手机屏幕
- */
-@media screen and (max-width: 912px) {
-    .left_right_img_words .button{
-        width: 110px;
-    }
-}
-/*
- 设定首页大于768px的手机屏幕
- */
-@media screen and (min-width: 768px)  {
-    .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img{
-        height: 1.8rem;
-        width: 100%;
-    }
-}
 #content .row{
     margin-left: 0;
     margin-right: 0;
@@ -185,4 +127,68 @@ nav p{
 .img_height{
     width: 100%;
     height: 100%;
+}
+
+/*
+ 设定首页小于320px的超小手机屏幕
+ */
+@media screen and (max-width: 340px) {
+    body .left_right_img_words .button_details{
+        top: 0;
+        margin-top:0;
+        font-size: .36rem;
+    }
+    body .left_right_img_words .price{
+        font-size: .36rem;
+    }
+}
+/*
+ 设定首页小于768px的手机屏幕
+ */
+@media screen and (max-width: 768px) {
+    .img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img{
+        width: 100%;
+        height: 4rem;!important;
+    }
+    #content{
+        width: 100%;
+        margin-top:0;
+    }
+    .phone_margin{
+        margin-top:20px;
+        margin-bottom:10px;
+    }
+    .left_right_img_words .button{
+        position: relative;
+    }
+    .left_right_img_words .button_details{
+        top: 0;
+        margin-top:0;
+        font-size: 16px;
+    }
+    .left_right_img_words .price{
+        font-size: 16px;
+    }
+
+    #content .left_right_img_words .room_info{
+        margin-top: 0;
+        margin-bottom: 18px;
+    }
+}
+/*
+ 设定小于861px的手机屏幕
+ */
+@media screen and (max-width: 912px) {
+    .left_right_img_words .button{
+        width: 110px;
+    }
+}
+/*
+ 设定首页大于768px的手机屏幕
+ */
+@media screen and (min-width: 768px)  {
+    .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img{
+        height: 1.8rem;
+        width: 100%;
+    }
 }
