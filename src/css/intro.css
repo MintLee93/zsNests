@@ -1,77 +1,3 @@
-/*
- 设定首页小于768px的手机屏幕
- */
-@media screen and (max-width: 767px) {
-    body nav{
-          height: 300px;
-    }
-    body  #content{
-        width: 90%;
-    }
-    #content .geography .geography_bottom p {
-        font-size: 16px;
-    }
-    #content .geography .geography_bottom .first_p{
-        margin-top: 22px;
-    }
-
-    #content .geography .geography_bottom .center_p{
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-
-    #content .geography .geography_bottom .last_p{
-        margin-bottom: 22px;
-    }
-    .rooms .css_h2{
-        font-size: 12px;
-        margin-bottom: 0;
-    }
-
-    .rooms .css_h3{
-        font-size: 12px;
-    }
-    body .rooms .css_h2_margin{
-        font-size: 16px;
-        color: #000000;
-        margin-bottom: 6px;
-        margin-top: 6px;
-    }
-    body .rooms .style_p{
-        font-size: 12px;
-        color: #000000;
-    }
-
-    body #content .coffee .coffee_p2 {
-        margin-top: 10px;
-        font-size: 16px;
-        color: #343434;
-    }
-
-    body .font_big_css{
-        font-size: 16px;
-        margin-top: 6px;
-    }
-
-    /*#content .rooms .nine_img div{*/
-        /*padding: 6px;*/
-    /*}*/
-
-    /*body #content .rooms .left_right_img{*/
-        /*margin-top: 0;*/
-    /*}*/
-
-    /*body #content .left_right_img .rooms_bottom_img{*/
-        /*margin-bottom: 0;*/
-    /*}*/
-    body #content .nine_img{
-        margin-bottom: 0;
-    }
-    body #content .row .iland_pic img{
-        margin-bottom: 0;
-    }
-
-}
 
 nav{
     text-align: center;
@@ -167,6 +93,7 @@ nav{
 
 #content .coffee .internal{
     margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 #content .coffee .coffee_div{
@@ -175,15 +102,21 @@ nav{
 }
 
 #content .coffee .coffee_p2 {
-    margin-top: 40px;
+    margin-top: 20px;
     font-size: 20px;
     color: #343434;
 }
 
+.css_p {
+    margin-bottom: 40px;
+}
+
 #content .coffee .coffee_p3 {
-    margin-top: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 16px;
-    text-indent:36px;
+    text-indent: 36px;
+    word-wrap:break-word;
     color: #6f6f6f;
 }
 
@@ -196,6 +129,7 @@ nav{
     /*height: 600px;*/
     /*padding: 0;*/
     margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 #content .coffee .coffee_details_right li {
@@ -205,11 +139,6 @@ nav{
 
 #content .rooms .left_right_img  div img{
     width: 98%;
-}
-
-#content .rooms .left_right_img  div .sub-img{
-    width: 98%;
-    max-height: 168px;
 }
 
 .sub-intro {
@@ -285,4 +214,110 @@ nav{
 
 .style_position{
     position: relative;
+}
+
+/*
+ 设定首页小于768px的手机屏幕
+ */
+@media screen and (max-width: 767px) {
+    body nav{
+        height: 300px;
+    }
+    body  #content{
+        width: 90%;
+    }
+    #content .geography .geography_bottom p {
+        font-size: 16px;
+    }
+    #content .geography .geography_bottom .first_p{
+        margin-top: 22px;
+    }
+
+    #content .geography .geography_bottom .center_p{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    #content .geography .geography_bottom .last_p{
+        margin-bottom: 22px;
+    }
+    .rooms .css_h2{
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+
+    .rooms .css_h3{
+        font-size: 12px;
+    }
+    body .rooms .css_h2_margin{
+        font-size: 16px;
+        color: #000000;
+        margin-bottom: 6px;
+        margin-top: 6px;
+    }
+    body .rooms .style_p{
+        font-size: 12px;
+        color: #000000;
+    }
+
+    body #content .coffee .coffee_p2 {
+        font-size: 16px;
+        color: #343434;
+    }
+
+    body .font_big_css{
+        font-size: 16px;
+        margin-top: 6px;
+    }
+
+    /*#content .rooms .nine_img div{*/
+    /*padding: 6px;*/
+    /*}*/
+
+    /*body #content .rooms .left_right_img{*/
+    /*margin-top: 0;*/
+    /*}*/
+
+    /*body #content .left_right_img .rooms_bottom_img{*/
+    /*margin-bottom: 0;*/
+    /*}*/
+    body #content .nine_img{
+        margin-bottom: 0;
+    }
+    body #content .row .iland_pic img{
+        margin-bottom: 20px;
+    }
+
+    .css_h1 {
+        font-size: 22px;
+        margin-top: 10px;
+    }
+
+    .css_p {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    #content .coffee .internal{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #content .coffee .coffee_details  {
+        /*border: 1px solid;*/
+        /*height: 600px;*/
+        /*padding: 0;*/
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    #content .part{
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    #content .coffee .coffee_p2 {
+        margin-top: 0;
+    }
+
 }
