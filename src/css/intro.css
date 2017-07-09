@@ -180,6 +180,13 @@ nav{
     color: #343434;
 }
 
+#content .coffee .coffee_p3 {
+    margin-top: 40px;
+    font-size: 16px;
+    text-indent:36px;
+    color: #6f6f6f;
+}
+
 #content .coffee .coffee_details_left img{
     width: 100%;
 }
