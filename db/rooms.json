@@ -4,7 +4,7 @@
 			"id": "0001",
 			"name": "森系双床房",
 			"bedType": "双床",
-			"avatar": "2.jpg",
+			"avatar": "8.jpg",
 			"price": "580",
 			"additional": false,
 			"area": 35,
@@ -18,7 +18,8 @@
 				"4.jpg",
 				"5.jpg",
 				"6.jpg",
-				"7.jpg"
+				"7.jpg",
+				"8.jpg"
 			],
 			"maxNum": 2
 		},
@@ -55,7 +56,7 @@
 			"id": "0003",
 			"name": "幸舍",
 			"bedType": "双床",
-			"avatar": "1.jpg",
+			"avatar": "19.jpg",
 			"price": "830",
 			"additional": false,
 			"area": 35,
@@ -80,7 +81,12 @@
 				"15.jpg",
 				"16.jpg",
 				"17.jpg",
-				"18.jpg"
+				"18.jpg",
+				"19.jpg",
+				"20.jpg",
+				"21.jpg",
+				"22.jpg",
+				"23.jpg"
 			],
 			"maxNum": 2
 		},
@@ -88,7 +94,7 @@
 			"id": "0004",
 			"name": "森系亲子房",
 			"bedType": "多床",
-			"avatar": "1.jpg",
+			"avatar": "16.jpg",
 			"price": "680",
 			"additional": false,
 			"area": 35,
@@ -108,7 +114,10 @@
 				"10.jpg",
 				"11.jpg",
 				"12.jpg",
-				"13.jpg"
+				"13.jpg",
+				"14.jpg",
+				"15.jpg",
+				"16.jpg"
 			],
 			"maxNum": 3
 		},
@@ -116,7 +125,7 @@
 			"id": "0005",
 			"name": "啡友房",
 			"bedType": "双床",
-			"avatar": "1.jpg",
+			"avatar": "9.jpg",
 			"price": "780",
 			"additional": false,
 			"area": 35,
@@ -130,7 +139,9 @@
 				"4.jpg",
 				"5.jpg",
 				"6.jpg",
-				"7.jpg"
+				"7.jpg",
+				"8.jpg",
+				"9.jpg"
 			],
 			"maxNum": 2
 		},
@@ -138,7 +149,7 @@
 			"id": "0006",
 			"name": "代舍",
 			"bedType": "大床",
-			"avatar": "1.jpg",
+			"avatar": "12.jpg",
 			"price": "1080",
 			"additional": false,
 			"area": 35,
@@ -155,7 +166,9 @@
 				"7.jpg",
 				"8.jpg",
 				"9.jpg",
-				"10.jpg"
+				"10.jpg",
+				"11.jpg",
+				"12.jpg"
 			],
 			"maxNum": 2
 		},
@@ -163,7 +176,7 @@
 			"id": "0007",
 			"name": "雀舍套房",
 			"bedType": "大床",
-			"avatar": "1.jpg",
+			"avatar": "14.jpg",
 			"price": "1280",
 			"additional": false,
 			"area": 35,
@@ -180,7 +193,11 @@
 				"7.jpg",
 				"8.jpg",
 				"9.jpg",
-				"10.jpg"
+				"10.jpg",
+				"11.jpg",
+				"12.jpg",
+				"13.jpg",
+				"14.jpg"
 			],
 			"maxNum": 2
 		},
@@ -188,7 +205,7 @@
 			"id": "0008",
 			"name": "欢乐颂二居室",
 			"bedType": "双人床1.8米，2张",
-			"avatar": "1.jpg",
+			"avatar": "11.jpg",
 			"price": "718",
 			"additional": false,
 			"area": 35,
@@ -204,7 +221,9 @@
 				"6.jpg",
 				"7.jpg",
 				"9.jpg",
-				"10.jpg"
+				"10.jpg",
+				"11.jpg",
+				"12.jpg"
 			],
 			"maxNum": 4
 		},
@@ -231,6 +250,44 @@
 				"9.jpg"
 			],
 			"maxNum": 6
+		},
+		{
+			"id": "0010",
+			"name": "雀舍大床房",
+			"bedType": "双人床1.8米，1张",
+			"avatar": "1.jpg",
+			"price": "1692",
+			"additional": false,
+			"area": 35,
+			"floor": "2-4",
+			"num": "3",
+			"detail": "1.8米大床，电动窗帘",
+			"images": [
+				"1.jpg",
+				"2.jpg",
+				"3.jpg",
+				"4.jpg",
+				"5.jpg"
+			],
+			"maxNum": 2
+		},
+		{
+			"id": "0011",
+			"name": "好舍",
+			"bedType": "圆床2米，1张",
+			"avatar": "1.jpg",
+			"price": "1692",
+			"additional": false,
+			"area": 32,
+			"floor": "2-4",
+			"num": "3",
+			"detail": "1.8米园床，电动窗帘",
+			"images": [
+				"1.jpg",
+				"2.jpg",
+				"3.jpg"
+			],
+			"maxNum": 2
 		}
 	],
 	"intro": [
